@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Product Quote | PackifyCustomBoxes</title>
+  <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 0.75rem;
+    }
+    .image-container img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.5s ease;
+    }
+    .hover-image {
+      opacity: 0;
+    }
+    .image-container:hover .hover-image {
+      opacity: 1;
+    }
+    .image-container:hover .main-image {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white border-b shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto justify-between items-center px-6 py-4">
+      <h1 class="text-xl text-center font-bold text-gray-800">Packify<span class="text-orange-500">CustomBoxes</span></h1>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 bg-white rounded-lg shadow-lg">
+
+    <!-- Static Product Detail Section -->
+    <section class="col-span-1">
+      <h1 class="text-4xl font-extrabold mb-6 text-orange-600">Tuck Boxes</h1>
+      <div class="image-container mb-6">
+        <img src="Images/Kraft-Tuck-Top-Gift-Box-Mockup.jpg" alt="Custom Mailer Boxes" class="main-image rounded-lg" />
+        <img src="Images/Kraft-Box-Packaging-Mockup-1536x1336.jpg" alt="Custom Mailer Boxes Hover" class="hover-image absolute inset-0 rounded-lg" />
+      </div>
+      <p class="text-gray-700 text-lg mb-8">
+       Compact and sturdy, small tuck boxes are ideal for packaging lightweight items like cosmetics, jewelry, or gifts. Their easy-to-close tuck flap ensures secure storage with a neat, professional look.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-sm">
+        <div><img src="Images/clock.png" class="mx-auto w-8 h-8" /><p>Fast Turnaround</p></div>
+        <div><img src="Images/paint-swatch.png" class="mx-auto w-8 h-8" /><p>Full Color Printing</p></div>
+        <div><img src="Images/paint-palette.png" class="mx-auto w-8 h-8" /><p>Design Support</p></div>
+        <div><img src="Images/delivery.png" class="mx-auto w-8 h-8" /><p>Free Shipping</p></div>
+      </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="col-span-1">
+      <h3 class="text-xl font-semibold mb-4 text-gray-800">Request Custom Quote</h3>
+      <form action="https://formspree.io/f/xvgqgbre" method="POST" class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" name="name" placeholder="Name*" required class="p-3 border rounded-md w-full">
+          <input type="email" name="email" placeholder="Email*" required class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <input type="tel" name="phone" placeholder="Phone" class="p-3 border rounded-md w-full">
+          <input type="text" name="quantity" placeholder="Quantity" class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <input type="text" name="length" placeholder="Length (in)" class="p-3 border rounded-md w-full">
+          <input type="text" name="width" placeholder="Width (in)" class="p-3 border rounded-md w-full">
+          <input type="text" name="depth" placeholder="Depth (in)" class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <select name="material" class="p-3 border rounded-md w-full">
+            <option>Material</option>
+            <option>Cardboard</option>
+            <option>Kraft</option>
+            <option>Corrugated</option>
+          </select>
+          <select name="printed_side" class="p-3 border rounded-md w-full">
+            <option>Printed Side</option>
+            <option>Outside Only</option>
+            <option>Inside & Outside</option>
+          </select>
+        </div>
+        <textarea name="message" rows="4" required placeholder="Please describe your product and packaging requirements..." class="p-3 border rounded-md w-full"></textarea>
+        <input type="hidden" name="_next" value="thankyou.html" />
+        <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded hover:bg-orange-600 transition">
+          Request a Quote
+        </button>
+      </form>
+    </section>
+  </main>
+
+<section class="max-w-7xl mx-auto px-4 md:px-8 py-12">
+  <h2 class="text-3xl md:text-3xl font-extrabold text-center text-gray-800 mb-10">
+    Custom Tuck Boxes Products
+  </h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    
+    <!-- Product Card -->
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('tuck-top-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/kraft-tuck-top-boxes.jpg"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">Tuck Top Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('auto-lock-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/auto-lock-boxes-wholesale.webp"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">Auto Lock Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('tuck-mailer-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/tuck-top-mailer-packaging-boxes.webp"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">Tuck Mailer Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('straight-tuck-end-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/reverse-tuck-boxes.webp"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">Straight Tuck End Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('kraft-tuck-top-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/kraft-tuck-top-boxes (1).jpg"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">Kraft Tuck Top Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('snap-lock-bottom-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/Tuck-Top-Snap-Lock-Bottom.webp"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">Snap Lock Bottom Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('double-wall-tuck-top-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/images (2).jpg"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">Double Wall Tuck Top Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('cbd-tuck-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/customized-cbd-tuck-boxes.jpg"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">CBD Tuck Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="item__wrap">
+      <div class="inner__wrap">
+        <a onclick="openModalById('roll-end-tuck-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+          <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+            <img
+              width="336"
+              height="336"
+              alt="Metallic blue custom bubble mailer set against a white background."
+              loading="lazy"
+              src="Images/roll-end-front-tuck-mailer-02.png"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="desc__wrap py-3 text-center">
+            <h3 class="font-headings text-[20px] leading-[24px] text-acai font-bold mb-1">Roll End Tuck Boxes</h3>
+            <span class="font-description text-acai text-[13px] lg:text-[15px]">Request a Quote</span>
+          </div>
+        </a>
+      </div>
+    </div>
+ <div class="item__wrap">
+  <div class="inner__wrap">
+    <div onclick="openModalById('reverse-tuck-end-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+      <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+        <img
+          src="Images/reverse-tuck-end-boxes.webp"
+          alt="Pink Mailer Boxes"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="desc__wrap py-3 text-center">
+        <h3 class="text-[18px] font-semibold text-gray-800">Reverse Tuck End Boxes
+</h3>
+        <span class="text-[13px] text-gray-500">Request a Quote</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="item__wrap">
+  <div class="inner__wrap">
+    <div onclick="openModalById('123-bottom-boxes')" class="relative flex flex-wrap items-center sm:block bg-white px-0 sm:p-2 cursor-pointer font-mori group tracking-mori rounded-[20px] sm:rounded-b-[12px] sm:rounded-t-[36px] sm:hover:shadow-xl sm:border-[2px] sm:border-white sm:hover:border-[#fbfbfb] transition-all duration-300">
+      <div class="thumb__wrap w-full bg-[#efefef] rounded-[22px] md:rounded-[32px] overflow-hidden">
+        <img
+          src="Images/Top-Tuck-1-2-3-Bottom-Box-e.webp"
+          alt="Pink Mailer Boxes"
+          class="w-full h-auto"
+        />
+      </div>
+      <div class="desc__wrap py-3 text-center">
+        <h3 class="text-[18px] font-semibold text-gray-800">1-2-3 Bottom Boxes</h3>
+        <span class="text-[13px] text-gray-500">Request a Quote</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <div class="thumb__wrap w-full bg-[#f6f6f6] rounded-[22px] md:rounded-[32px] overflow-hidden flex flex-col items-center justify-center h-[20rem] px-4 text-center space-y-4">
+  <p class="text-gray-700 text-sm md:text-base">
+    <span class="font-semibold block mb-1">Didn’t find your ideal design?</span>
+    We offer fully custom packaging tailored to your exact needs—styles, finishes, and dimensions.
+  </p>
+  <a href="get-quote.html" class="inline-block bg-orange-600 text-white text-sm px-5 py-2 rounded-md font-medium hover:bg-orange-800 transition">
+    Get Custom Quote
+  </a>
+</div>
+
+  </div>
+</section>
+
+<div class="max-w-7xl mx-auto px-6 py-10">
+    
+    <!-- Tabs -->
+    <div class="flex flex-wrap gap-4 mb-10 justify-center">
+      <button onclick="showTab('materials')" class="tab-button bg-white text-orange-600 font-semibold px-5 py-2 rounded shadow-md hover:bg-orange-500 hover:text-white transition">MATERIALS</button>
+      <button onclick="showTab('printing')" class="tab-button bg-white text-orange-600 font-semibold px-5 py-2 rounded shadow-md hover:bg-orange-500 hover:text-white transition">PRINTING</button>
+      <button onclick="showTab('finishes')" class="tab-button bg-white text-orange-600 font-semibold px-5 py-2 rounded shadow-md hover:bg-orange-500 hover:text-white transition">FINISHES</button>
+      <button onclick="showTab('boxStyles')" class="tab-button bg-white text-orange-600 font-semibold px-5 py-2 rounded shadow-md hover:bg-orange-500 hover:text-white transition">BOX STYLES</button>
+    </div>
+
+    <!-- CONTENT: Grid Wrapper -->
+    <div id="materials" class="tab-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card -->
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-card-stock.webp" alt="Card Stock" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Card Stock</h3>
+        <p class="text-gray-700 text-sm">Thinner and more flexible than corrugated board, card stock is ideal for lightweight products or inserts. Supports high-resolution printing where detail and smoothness are key.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-natural-kraft-board.webp" alt="Natural Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Natural Kraft Board</h3>
+        <p class="text-gray-700 text-sm">Made from a mix of virgin and recycled pulp, this unbleached board has a raw, earthy finish. Great for eco-conscious, organic branding.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-oyster-white-kraft-corrugated.webp" alt="Oyster White" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Oyster White Kraft Corrugated</h3>
+        <p class="text-gray-700 text-sm">Smooth, off-white linerboard great for sharp, detailed prints. Offers a subtle background alternative to bright whites.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-bleached-white-corrugated.webp" alt="Bleached White" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Bleached White Board</h3>
+        <p class="text-gray-700 text-sm">Bright, clean, and vivid for high-end printing. Ideal for sharp logos, retail packaging, and attention-grabbing visuals.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-kraft.webp" alt="Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Kraft</h3>
+        <p class="text-gray-700 text-sm">Tear-resistant and recyclable brown surface. Best for brands going for a natural, raw, or minimalist style.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-white-kraft.webp" alt="White Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">White Kraft</h3>
+        <p class="text-gray-700 text-sm">Smooth white liner for crisp artwork. Provides a balanced white look without harsh brightness.</p>
+      </div>
+    </div>
+
+    <!-- PRINTING Tab -->
+    <div id="printing" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/bf037986cf978e92147a49d08bdad316_larger_format_p.png" alt="Card Stock" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Offset Printing</h3>
+        <p class="text-gray-700 text-sm">High-end printing technique ideal for high-volume runs with consistent color and sharp detail. Great for premium packaging where precise branding is key for a large volume of boxes.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/MGAUKXTXQRVQIAQVVUIEYBWQ6W3U09799.jpg" alt="Natural Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Digital Print</h3>
+        <p class="text-gray-700 text-sm">Best for short runs or personalized packaging, where printing speed is your concern. This technique offers a quick turnaround and is cost-effective for small batches or packaging prototypes.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/Water-based-screen-printing-inks-for-fabrics.jpeg" alt="Oyster White" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Water-base Ink</h3>
+        <p class="text-gray-700 text-sm">Eco-friendly ink option for printing, suitable for brands focusing on sustainability. Offers good print quality and sharp results with less environmental impact.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/images (1).jpg" alt="Bleached White" class="rounded-md mb-4 w-full  h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Soy / Vegetable Ink</h3>
+        <p class="text-gray-700 text-sm">Another eco-conscious choice that provides vibrant colors and is easier to remove during recycling. This option is highly preferred by sustainable brands and is great for organic or green product lines.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/GP6102B-Pantone-Color-Bridge-Guide-Set-5_web-740x450.png" alt="Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Pantone</h3>
+        <p class="text-gray-700 text-sm">Exceptional color model perfect for brand-specific colors. Ensures that logos, icons, and key elements look exactly the same on every box. Great to use when accurate branding holds the utmost importance.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/PANTONE_877_vs_PANTONE_Silver_10077_C.jpg" alt="White Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Pantone Metallic</h3>
+        <p class="text-gray-700 text-sm">A premium color model that adds luxury and shimmer to packaging. This method is common in cosmetics, perfumes, and premium gifts to enhance shelf appeal by offering a top-of-the-line feel with the colors.</p>
+      </div>
+    </div>
+
+    <!-- FINISHES Tab -->
+    <div id="finishes" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-aqueous-coating.webp" alt="Card Stock" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Aqueous Coating</h3>
+        <p class="text-gray-700 text-sm">A fast-drying, water-based finish that adds light protection and a clean surface feel. Available in gloss or matte, this eco-friendly coating is ideal for print-heavy boxes and helps resist fingerprints and minor scuffs.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-soft-touch-coating.webp" alt="Natural Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Soft Touch Coating</h3>
+        <p class="text-gray-700 text-sm">Adds a velvet-like texture to your packaging, creating a soft, matte surface that feels premium in hand. Ideal for brands that want a more tactile, elegant unboxing experience without shine or glare.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-varnish.webp" alt="Oyster White" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Varnish</h3>
+        <p class="text-gray-700 text-sm">A clear coating that adds shine, smoothness, and print protection. Applied using CMYK presses and available in gloss, satin, or matte finishes. Best for enhancing colors while keeping costs low.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-spot-gloss-uv.webp" alt="Bleached White" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Spot Gloss UV</h3>
+        <p class="text-gray-700 text-sm">Gloss coating applied to select areas of the print, adding contrast and focus. Often used on logos or text to create shine that stands out against a matte background. UV cured for durability.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-lamination.webp" alt="Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Lamination</h3>
+        <p class="text-gray-700 text-sm">A thin film layered over the surface of the box to increase durability and moisture resistance. Ideal for protecting full-color designs and maintaining box integrity during shipping or retail handling.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-anti-scratch-lamination.webp" alt="White Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Soft Touch Coating</h3>
+        <p class="text-gray-700 text-sm">BOPP (biaxially oriented polypropylene) lamination that resists scuffs, scratches, and fingerprints. Provides a smooth finish with added protection for heavily handled boxes.</p>
+      </div>
+    </div>
+
+    <!-- BOX STYLES Tab -->
+    <div id="boxStyles" class="tab-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-roll-end-with-lid.webp" alt="Card Stock" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Roll Ends With Lid (C005)</h3>
+        <p class="text-gray-700 text-sm">Thinner and more flexible than corrugated board, card stock is ideal for lightweight products or inserts. Supports high-resolution printing where detail and smoothness are key.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-roll-end-tuck-front-corrugated-box.webp" alt="Natural Kraft" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Roll End Tuck Front Corrugated Box (C003)</h3>
+        <p class="text-gray-700 text-sm">Made from a mix of virgin and recycled pulp, this unbleached board has a raw, earthy finish. Great for eco-conscious, organic branding.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-roll-end-tuck-top-corrugated-box.webp" alt="Oyster White" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Roll End Tuck Top Corrugated Box (C002)</h3>
+        <p class="text-gray-700 text-sm">Smooth, off-white linerboard great for sharp, detailed prints. Offers a subtle background alternative to bright whites.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <img src="Images/thumbnail-roll-end-3-flap-lock-corrugated.webp" alt="Bleached White" class="rounded-md mb-4 w-full h-40">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Roll End 3 Flap Lock Corrugated Box (C004)</h3>
+        <p class="text-gray-700 text-sm">Bright, clean, and vivid for high-end printing. Ideal for sharp logos, retail packaging, and attention-grabbing visuals.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left Content -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Tuck Box Packaging for Stability, Strength, And Usability
+      </h2>
+      <p class="text-gray-700 mb-6">
+        Picture-perfect, insta-savvy tuck boxes are flawless for displaying or shipping cosmetics, small electrical items, medicines, jewelry, and more. They are perfect for any product you want to pack with care, grace, and awesomeness. Apart from attractiveness, they offer many other benefits. Here are some key features of our tuck packaging boxes.
+      </p>
+      <ul class="space-y-2 text-gray-700 mb-8 list-disc list-inside">
+        <li>Durable Cardboard, rigid paperboard, or kraft material ensuring protection and security.</li>
+        <li>Highly printable to add your logo and other branding elements easily.</li>
+        <li>Style variations such as tuck-end, tuck-top, and auto-lock boxes to fit your needs.</li>
+        <li>Custom sizes to offer a perfect fit for your products.</li>
+        <li>Sustainable materials and inks for a positive environmental impact.</li>
+      </ul>
+      <p class="text-gray-700 mb-6">
+These boxes are designed to give you a competitive advantage in the market. Plus, they are cost-effective due to our bulk discounts and wholesale prices.
+      </p>
+  <a href="get-quote.html" 
+     class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-md transition inline-block">
+    Get My Quote
+  </a>
+
+    </div>
+
+    <!-- Right Image with Hover -->
+    <div class="relative w-full h-80 rounded-xl overflow-hidden shadow-lg group h-[37rem]">
+      <img src="Images/roll-end-tuck-boxes.webp" 
+           alt="Mailer Box" 
+           class="w-full h-full object-cover absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0" />
+      <img src="Images/straight-tuck-end-boxes-with-logo.webp" 
+           alt="Mailer Box Open" 
+           class="w-full h-full object-cover absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100" />
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Modal -->
+<div id="productModal" class="fixed inset-0 bg-black bg-opacity-40 hidden items-center justify-center z-50">
+  <div
+    class="bg-white rounded-xl w-full max-w-xs p-3 relative shadow-lg transform transition-all scale-95 sm:scale-100
+           lg:max-w-4xl lg:rounded-2xl lg:p-8 lg:flex lg:flex-row lg:items-center"
+  >
+    <!-- Close Button -->
+    <button
+      onclick="closeModal()"
+      class="absolute top-1 right-1 text-gray-400 hover:text-black text-3xl leading-none px-2 py-1 z-10"
+    >
+      &times;
+    </button>
+
+    <!-- Image -->
+    <div class="rounded-lg overflow-hidden mb-2 lg:mb-0 lg:flex-shrink-0 lg:w-1/2 lg:h-auto">
+      <img
+        id="modalImage"
+        src=""
+        alt="Product Image"
+        class="w-full h-auto object-cover lg:rounded-l-xl"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="lg:pl-6 lg:w-1/2">
+      <!-- Title -->
+      <h2
+        id="modalTitle"
+        class="text-md font-semibold text-center text-gray-800 mb-1 lg:text-xl lg:text-left"
+      ></h2>
+
+      <!-- Description -->
+      <p
+        id="modalDesc"
+        class="text-gray-600 text-xs text-center mb-3 px-2 lg:text-sm lg:text-left lg:px-0"
+      ></p>
+
+      <!-- CTA Button -->
+      <div class="text-center lg:text-left">
+        <a
+          href="/get-quote.html"
+          class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-medium py-1 px-4 rounded-md transition duration-300 inline-block lg:text-sm lg:py-2 lg:px-6"
+        >
+          Get Custom Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <footer class="text-center py-6 text-sm text-gray-500 mt-12">
+    &copy; 2025 PackifyCustomBoxes. All rights reserved.
+  </footer>
+<script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('tab-active');
+      });
+      event.target.classList.add('tab-active');
+    }
+
+
+  </script>
+<script src="Javascript/Custom-Mailer-Boxes.js"></script>
+</body>
+</html>

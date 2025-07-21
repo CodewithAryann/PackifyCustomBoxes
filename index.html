@@ -22,6 +22,27 @@
 
 </head>
 <body>
+   <div id="loader" class="fixed top-0 left-0 w-full h-full bg-orange-800 z-[1000] flex flex-col items-center justify-center transition-all duration-700">
+  <h1 class="flex flex-wrap items-center justify-center gap-3 px-4 text-[6vw] sm:text-[5vw] md:text-[3.5vw] text-transparent bg-[whitesmoke] bg-clip-text uppercase absolute animate-fade text-center">
+  <img src="Images/favicon-white.png" alt="Logo" class="w-[50px] sm:w-[60px] md:w-[80px] h-auto" />
+  PackifyCustomBoxes
+</h1>
+
+
+  <!-- <h1 class="text-[4vw] sm:text-[7vw] text-transparent bg-[whitesmoke] bg-clip-text uppercase absolute opacity-0 animate-fade delay-[2000ms]">
+  Discover custom packaging
+</h1>
+
+<h1 class="text-[4vw] sm:text-[7vw] text-transparent bg-[whitesmoke] bg-clip-text uppercase absolute opacity-0 animate-fade delay-[3000ms]">
+   your perfect box
+</h1>
+
+<h1 class="text-[4vw] sm:text-[7vw] text-transparent bg-[whitesmoke] bg-clip-text uppercase absolute opacity-0 animate-fade delay-[4000ms]">
+  Deliver with impact
+</h1> -->
+
+</div>
+
 <header>
   <div class="logo"><h1 class="text-2xl text-center font-bold text-white">Packify<span class="text-orange-500">CustomBoxes</span></h1></div>
   
@@ -56,21 +77,48 @@
   </div>
 </header>
 
-<div class="hero-bg"></div>
-
-
-
-
-  <section class="hero" id="hero">
-    <div class="hero-text">
-      <h1>Your Packaging. Your Story.</h1>
-      <p>Premium custom boxes designed to elevate your brand. Fully printed. Fast turnaround. Eco-conscious. Made to impress — inside and out.</p>
-      <p><strong>Free U.S. Shipping. No Minimums. Delivered Worldwide.</strong></p>
+<section class="relative bg-orange-500 text-white overflow-hidden p-[40px] pr-0 pb-0 pt-0">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center relative z-10 min-h-[600px]">
+    
+    <!-- Left Text Content -->
+    <div class="px-6 py-20 space-y-6 z-20 relative bg-orange-500">
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+        Your Packaging. <br />Your Story.
+      </h1>
+      <p class="text-lg sm:text-xl">
+        Premium custom boxes designed to elevate your brand. Fully printed. Fast turnaround. Eco-conscious. Made to impress — inside and out.
+      </p>
+      <p class="text-lg font-bold">
+        Free U.S. Shipping. No Minimums. Delivered Worldwide.
+      </p>
+      <a href="#type" class="mt-4 inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-lg shadow-md hover:bg-orange-100 transition">
+        Start Your Custom Box
+      </a>
     </div>
-    <div class="hero-image">
-      <img src="Images/hero.png" alt="Premium custom boxes preview" />
+
+    <!-- Right Media Block (Video on Desktop, Image on Mobile) -->
+    <div class="relative w-full h-full min-h-[350px]">
+      <!-- Video: visible on md and larger -->
+      <video 
+        src="/Images/Untitled video - Made with Clipchamp.mp4" 
+        poster="/Images/Untitled video - Made with Clipchamp.mp4" 
+        autoplay 
+        loop 
+        muted 
+        playsinline 
+        preload="auto" 
+        class="hidden md:block absolute inset-0 w-full h-full object-cover pointer-events-none">
+      </video>
+
+      <!-- Fallback Image: visible on small screens -->
+      <img 
+        src="/Images/hero.png" 
+        alt="Packaging Preview" 
+        class="block md:hidden absolute inset-0  pointer-events-none pb-0">
     </div>
-  </section>
+  </div>
+</section>
+
 <section class="section about-section" id="about">
   <div class="container">
     <h2 class="section-title">About Us</h2>
@@ -94,8 +142,25 @@
       </div>
 
       <div class="about-image">
-        <img src="Images/About-png.png" alt="Custom packaging boxes" />
+        <div class="relative w-full max-w-full group overflow-hidden rounded-[10px] shadow-[0_10px_25px_rgba(0,0,0,0.08)]">
+  <!-- Static Image -->
+  <img 
+    src="Images/lawdies-candy-thumbnail-home.webp" 
+    alt="Custom Box"
+    class="absolute inset-0 w-full h-auto object-cover rounded-[10px] transition-opacity duration-500 ease-in-out opacity-100 group-hover:opacity-0 z-10"
+  />
+
+  <!-- Hover Image -->
+  <img 
+    src="Images/microdays-thumbnail-home.webp" 
+    alt="Hovered Custom Box"
+    class="w-full h-auto object-cover rounded-[10px] transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100 z-0"
+  />
+</div>
+
       </div>
+
+      
     </div>
   </div>
 </section>
@@ -118,14 +183,14 @@
       class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100">
   </div>
   <div class="p-5 text-left">
-    <h3 class="text-xl font-semibold mb-2">Custom Mailer Boxes</h3>
+    <h3 class="text-xl font-semibold mb-2">Mailer Boxes</h3>
     <p class="text-gray-600 text-sm mb-4">Offer secure, stylish packaging for e-commerce and subscription products. Designed for durability and brand impact, they enhance presentation and protect contents during transit.</p>
   </div>
 </a>
 
 
       <!-- Box Card 2 -->
-  <a href="product-detail.html?id=folding" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
+  <a href="Custom-tuck-boxes.html" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
     <div class="relative w-full h-48 overflow-hidden group">
       <img src="Images/Kraft-Tuck-Top-Gift-Box-Mockup.jpg" alt="Custom Folding Carton"
         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0">
@@ -134,12 +199,12 @@
     </div>
     <div class="p-5 text-left">
       <h3 class="text-xl font-semibold mb-2">Tuck Boxes</h3>
-      <p class="text-gray-600 text-sm mb-4">Offer secure, stylish packaging for e-commerce and subscription products. Designed for durability and brand impact, they enhance presentation and protect contents during transit.</p>
+      <p class="text-gray-600 text-sm mb-4">Compact and sturdy, small tuck boxes are ideal for packaging lightweight items like cosmetics, jewelry, or gifts. Their easy-to-close tuck flap ensures secure storage with a neat, professional look.</p>
     </div>
   </a>
 
   <!-- Box Card 3 -->
-  <a href="product-detail.html?id=rigid" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
+  <a href="rigid-boxes.html" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
     <div class="relative w-full h-48 overflow-hidden group">
       <img src="Images/Two-Piece-Box-4.webp" alt="Custom Rigid Box"
         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0">
@@ -153,7 +218,7 @@
   </a>
 
   <!-- Box Card 4 -->
-  <a href="product-detail.html?id=shipping" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
+  <a href="Dispenser-Boxes.html" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
     <div class="relative w-full h-48 overflow-hidden group">
       <img src="Images/Custom-Gravity-Feed-Dispenser-Boxes4.webp" alt="Custom Shipping Box"
         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0">
@@ -162,12 +227,12 @@
     </div>
     <div class="p-5 text-left">
       <h3 class="text-xl font-semibold mb-2">Dispenser Boxes</h3>
-      <p class="text-gray-600 text-sm mb-4">Compact and practical, dispenser boxes allow easy access to products while keeping them neatly organized—ideal for retail, medical, or everyday use.</p>
+      <p class="text-gray-600 text-sm mb-4">Custom dispenser boxes are specially designed cardboard packages that provide convenient, controlled access to their contents through easy-to-tear perforated openings, often called "flip-out dispenser" openings.</p>
     </div>
   </a>
 
   <!-- Box Card 5 -->
-  <a href="product-detail.html?id=gift" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
+  <a href="Cigarette-Boxes.html" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
     <div class="relative w-full h-48 overflow-hidden group">
       <img src="Images/custom-printed-pre-roll-cigarette-boxes__35604.jpg" alt="Custom Die Cut Box"
         class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0">
@@ -279,7 +344,7 @@
 </a> -->
 
 <!-- Box Card 13 -->
-<a href="product-detail.html?id=burger" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
+<a href="Burger-boxes.html" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
   <div class="relative w-full h-48 overflow-hidden group">
     <img src="Images/Burger-Boxes.jpg" alt="Custom Sleeve Box"
       class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0">
@@ -293,7 +358,7 @@
 </a>
 
 <!-- Box Card 14 -->
-<a href="product-detail.html?id=magnetic" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
+<a href="Magnetic-closure.html" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
   <div class="relative w-full h-48 overflow-hidden group">
     <img src="Images/Custom-box-14.jpg" alt="Custom Sleeve Box"
       class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0">
@@ -321,7 +386,7 @@
 </a> -->
 
 <!-- Box Card 16 -->
-<a href="product-detail.html?id=cosmetic" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
+<a href="Cosmetic-Boxes.html" class="block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 hover:ring-2 hover:ring-orange-300">
   <div class="relative w-full h-48 overflow-hidden group">
     <img src="Images/Custom-box-16.png" alt="Custom Sleeve Box"
       class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0">
@@ -829,5 +894,6 @@
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 
   <script src="Javascript/script.js"></script>
+  <script src="Javascript/loading.js"></script>
 </body>
 </html>

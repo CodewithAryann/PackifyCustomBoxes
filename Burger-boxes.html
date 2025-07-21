@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Product Quote | PackifyCustomBoxes</title>
+  <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 0.75rem;
+    }
+    .image-container img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.5s ease;
+    }
+    .hover-image {
+      opacity: 0;
+    }
+    .image-container:hover .hover-image {
+      opacity: 1;
+    }
+    .image-container:hover .main-image {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white border-b shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto justify-between items-center px-6 py-4">
+      <h1 class="text-xl text-center font-bold text-gray-800">Packify<span class="text-orange-500">CustomBoxes</span></h1>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 bg-white rounded-lg shadow-lg">
+
+    <!-- Static Product Detail Section -->
+    <section class="col-span-1">
+      <h1 class="text-4xl font-extrabold mb-6 text-orange-600">Burger Boxes</h1>
+      <div class="image-container mb-6">
+        <img src="Images/Burger-Boxes.jpg" alt="Custom Mailer Boxes" class="main-image rounded-lg" />
+        <img src="Images/kraft-paper-food-packaging-boxes.jpg" alt="Custom Mailer Boxes Hover" class="hover-image absolute inset-0 rounded-lg" />
+      </div>
+      <p class="text-gray-700 text-lg mb-8">
+     Designed to keep your burgers fresh, secure, and visually appealing. Perfect for dine-in, takeout, or delivery, they offer durability, insulation, and custom branding options.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-sm">
+        <div><img src="Images/clock.png" class="mx-auto w-8 h-8" /><p>Fast Turnaround</p></div>
+        <div><img src="Images/paint-swatch.png" class="mx-auto w-8 h-8" /><p>Full Color Printing</p></div>
+        <div><img src="Images/paint-palette.png" class="mx-auto w-8 h-8" /><p>Design Support</p></div>
+        <div><img src="Images/delivery.png" class="mx-auto w-8 h-8" /><p>Free Shipping</p></div>
+      </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="col-span-1">
+      <h3 class="text-xl font-semibold mb-4 text-gray-800">Request Custom Quote</h3>
+      <form action="https://formspree.io/f/xvgqgbre" method="POST" class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" name="name" placeholder="Name*" required class="p-3 border rounded-md w-full">
+          <input type="email" name="email" placeholder="Email*" required class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <input type="tel" name="phone" placeholder="Phone" class="p-3 border rounded-md w-full">
+          <input type="text" name="quantity" placeholder="Quantity" class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <input type="text" name="length" placeholder="Length (in)" class="p-3 border rounded-md w-full">
+          <input type="text" name="width" placeholder="Width (in)" class="p-3 border rounded-md w-full">
+          <input type="text" name="depth" placeholder="Depth (in)" class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <select name="material" class="p-3 border rounded-md w-full">
+            <option>Material</option>
+            <option>Cardboard</option>
+            <option>Kraft</option>
+            <option>Corrugated</option>
+          </select>
+          <select name="printed_side" class="p-3 border rounded-md w-full">
+            <option>Printed Side</option>
+            <option>Outside Only</option>
+            <option>Inside & Outside</option>
+          </select>
+        </div>
+        <textarea name="message" rows="4" required placeholder="Please describe your product and packaging requirements..." class="p-3 border rounded-md w-full"></textarea>
+        <input type="hidden" name="_next" value="thankyou.html" />
+        <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded hover:bg-orange-600 transition">
+          Request a Quote
+        </button>
+      </form>
+    </section>
+  </main>
+  <section class="max-w-7xl mx-auto px-6 py-16">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left Content -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Product Overview
+      </h2>
+      <p class="text-gray-700 mb-6">
+        Burgers are a global favorite and a staple of fast food found at virtually every street corner. With the rise of online ordering, distinguishing your brand from the competition has never been more crucial. That's where innovative packaging comes into play. Our unique and eye-catching burger boxes can capture customer attention and encourage repeat business.
+
+At Half Price Packaging, we specialize in creating burger packaging that not only showcases your delicious burgers but also ensures safe transit. Our boxes are designed to accommodate burgers along with ketchup sachets, salad, and fries, providing a complete dining experience.
+
+The personalized burger boxes we create stand out with their use of sustainable bamboo and food-safe paperboard. This material offers a high-quality appearance while protecting your food from moisture and other contaminants. In addition, we utilize soy-based and water-based inks in our printing processes, increasing your brand's visibility in an eco-friendly manner.
+      </p>
+  <a href="get-quote.html" 
+     class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-md transition inline-block">
+    Get My Quote
+  </a>
+
+    </div>
+
+    <!-- Right Image with Hover -->
+    <div class="relative w-full h-80 rounded-xl overflow-hidden shadow-lg group h-[37rem]">
+      <img src="Images/burger-boxes.webp" 
+           alt="Mailer Box" 
+           class="w-full h-full object-cover absolute inset-0 transition-opacity duration-500 opacity-100 group-hover:opacity-0" />
+      <img src="Images/burger-packaging-box.webp" 
+           alt="Mailer Box Open" 
+           class="w-full h-full object-cover absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100" />
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Modal -->
+<div id="productModal" class="fixed inset-0 bg-black bg-opacity-40 hidden items-center justify-center z-50">
+  <div
+    class="bg-white rounded-xl w-full max-w-xs p-3 relative shadow-lg transform transition-all scale-95 sm:scale-100
+           lg:max-w-4xl lg:rounded-2xl lg:p-8 lg:flex lg:flex-row lg:items-center"
+  >
+    <!-- Close Button -->
+    <button
+      onclick="closeModal()"
+      class="absolute top-1 right-1 text-gray-400 hover:text-black text-3xl leading-none px-2 py-1 z-10"
+    >
+      &times;
+    </button>
+
+    <!-- Image -->
+    <div class="rounded-lg overflow-hidden mb-2 lg:mb-0 lg:flex-shrink-0 lg:w-1/2 lg:h-auto">
+      <img
+        id="modalImage"
+        src=""
+        alt="Product Image"
+        class="w-full h-auto object-cover lg:rounded-l-xl"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="lg:pl-6 lg:w-1/2">
+      <!-- Title -->
+      <h2
+        id="modalTitle"
+        class="text-md font-semibold text-center text-gray-800 mb-1 lg:text-xl lg:text-left"
+      ></h2>
+
+      <!-- Description -->
+      <p
+        id="modalDesc"
+        class="text-gray-600 text-xs text-center mb-3 px-2 lg:text-sm lg:text-left lg:px-0"
+      ></p>
+
+      <!-- CTA Button -->
+      <div class="text-center lg:text-left">
+        <a
+          href="/get-quote.html"
+          class="bg-orange-500 hover:bg-orange-600 text-white text-xs font-medium py-1 px-4 rounded-md transition duration-300 inline-block lg:text-sm lg:py-2 lg:px-6"
+        >
+          Get Custom Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <footer class="text-center py-6 text-sm text-gray-500 mt-12">
+    &copy; 2025 PackifyCustomBoxes. All rights reserved.
+  </footer>
+<script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('tab-active');
+      });
+      event.target.classList.add('tab-active');
+    }
+
+
+  </script>
+<script src="Javascript/Cigarette-Boxes.js"></script>
+</body>
+</html>
