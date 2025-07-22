@@ -452,6 +452,51 @@
   <footer class="text-center py-6 text-sm text-gray-500 mt-12">
     &copy; 2025 PackifyCustomBoxes. All rights reserved.
   </footer>
+  <!-- WhatsApp Floating Button with Tooltip -->
+<div class="fixed bottom-6 left-6 z-50 flex flex-col items-start space-y-2">
+
+  <!-- Tooltip -->
+  <div id="wa-tooltip"
+       class="hidden bg-white text-sm text-gray-700 rounded-lg shadow-md flex items-center gap-2 relative w-max max-w-[220px] animate-fade-in p-[10px]">
+    Have questions? Chat with us!
+
+    <!-- Close Button -->
+    <button onclick="hideTooltip()"
+            class="absolute -top-2 -right-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full text-xs w-5 h-5 flex items-center justify-center font-bold shadow-sm">
+      &times;
+    </button>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/971501234567?text=Hi%2C%20I'm%20interested%20in%20custom%20boxes%20and%20would%20like%20to%20know%20more."
+     target="_blank"
+     class="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300">
+
+    <!-- WhatsApp Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M16.72 13.06c-.29-.14-1.7-.83-1.96-.93-.26-.1-.45-.14-.63.14s-.72.93-.88 1.12c-.16.2-.32.22-.6.08-.29-.14-1.22-.45-2.32-1.44-.86-.76-1.44-1.7-1.6-1.98-.17-.28-.02-.43.13-.57.14-.14.31-.36.45-.54.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.14-.63-1.52-.86-2.09-.23-.55-.46-.48-.63-.48s-.36-.02-.55-.02c-.2 0-.53.08-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.14.2 2.13 3.25 5.18 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.7-.7 1.94-1.38.24-.7.24-1.3.16-1.43-.08-.12-.26-.2-.54-.34z"/>
+    </svg>
+
+    <!-- Notification Badge -->
+    <span id="wa-badge"
+          class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow">
+      1
+    </span>
+  </a>
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/687ff2649e6e70191a1b4f39/1j0pslmr5';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 <script>
     function showTab(tabId) {
       document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
@@ -466,5 +511,6 @@
 
   </script>
 <script src="Javascript/Cigarette-Boxes.js"></script>
+<script src="Javascript/whatapp.js"></script>
 </body>
 </html>
