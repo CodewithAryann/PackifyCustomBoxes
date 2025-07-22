@@ -67,7 +67,7 @@ Enhance your brand’s image while securely packaging skincare and beauty produc
     <!-- Quote Form Section -->
     <section class="col-span-1">
       <h3 class="text-xl font-semibold mb-4 text-gray-800">Request Custom Quote</h3>
-      <form action="https://formspree.io/f/xvgqgbre" method="POST" class="space-y-4">
+      <form action="https://usebasin.com/f/a24a59909c70" method="POST" class="space-y-4">
         <div class="grid grid-cols-2 gap-4">
           <input type="text" name="name" placeholder="Name*" required class="p-3 border rounded-md w-full">
           <input type="email" name="email" placeholder="Email*" required class="p-3 border rounded-md w-full">
@@ -96,6 +96,15 @@ Enhance your brand’s image while securely packaging skincare and beauty produc
         </div>
         <textarea name="message" rows="4" required placeholder="Please describe your product and packaging requirements..." class="p-3 border rounded-md w-full"></textarea>
         <input type="hidden" name="_next" value="thankyou.html" />
+         <!-- File Upload -->
+  <div>
+    <label for="file" class="block text-sm font-medium text-gray-700">Attach Design or Reference File (optional)</label>
+    <input type="file" id="file" name="file"
+           class="mt-1 w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4
+                  file:rounded-md file:border-0 file:text-sm file:font-semibold
+                  file:bg-orange-50 file:text-orange-600
+                  hover:file:bg-orange-100 transition" />
+  </div>
         <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded hover:bg-orange-600 transition">
           Request a Quote
         </button>
