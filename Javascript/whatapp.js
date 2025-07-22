@@ -9,6 +9,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Manual close function
 function hideTooltip() {
-  const tooltip = document.getElementById('ai-notif');
+  const tooltip = document.getElementById('wa-tooltip');
   tooltip.classList.add('hidden');
 }
