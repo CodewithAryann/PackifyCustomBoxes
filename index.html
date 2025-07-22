@@ -921,12 +921,12 @@
 </footer>
 
 <!-- WhatsApp Floating Button with Tooltip -->
-<div class="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-2">
+<div class="fixed bottom-6 left-6 z-50 flex flex-col items-start space-y-2">
 
   <!-- Tooltip -->
   <div id="wa-tooltip"
-       class="hidden bg-white text-sm text-gray-700 rounded-lg  shadow-md flex items-center gap-2 relative w-max max-w-[220px] animate-fade-in p-[10px]">
-     Have questions? Chat with us!
+       class="hidden bg-white text-sm text-gray-700 rounded-lg shadow-md flex items-center gap-2 relative w-max max-w-[220px] animate-fade-in p-[10px]">
+    Have questions? Chat with us!
 
     <!-- Close Button -->
     <button onclick="hideTooltip()"
@@ -956,15 +956,16 @@
 
 
 
+
 <!-- Floating AI Chatbot -->
-<div id="ai-chatbot" class="fixed bottom-6 left-6 z-40 font-sans">
+<!-- <div id="ai-chatbot" class="fixed bottom-6 left-6 z-40 font-sans"> -->
   <!-- Chat Toggle Button with Badge -->
-  <div class="relative">
+  <!-- <div class="relative">
     <button onclick="toggleChat()" aria-label="Toggle Chat"
       class="bg-orange-500 hover:bg-orange-600 text-white p-4 rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-400 transition">
-      <img src="/Images/ai.png" alt="Chat Icon" class="w-7 h-7" />
+      <img src="/Images/ai.png" alt="Chat Icon" class="w-7 h-7" /> -->
       <!-- Notification Badge -->
-       <div></div>
+       <!-- <div></div>
     </button>
     <span id="ai-notif"
   style="cursor:pointer; border: 1px solid yellow;"
@@ -972,28 +973,40 @@
   onclick="this.style.display='none'">
   1
 </span>
-  </div>
+  </div> -->
 
   <!-- Chat Box -->
-  <div id="chat-box" class="hidden mt-2 w-[320px] bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200 flex flex-col">
+  <!-- <div id="chat-box" class="hidden mt-2 w-[320px] bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200 flex flex-col"> -->
     <!-- Header with Close Button -->
-    <div class="bg-orange-500 text-white px-4 py-3 font-semibold flex justify-between items-center select-none">
+    <!-- <div class="bg-orange-500 text-white px-4 py-3 font-semibold flex justify-between items-center select-none">
       Packify Assistant
       <button onclick="toggleChat()" class="text-white text-lg leading-none hover:text-gray-200 focus:outline-none">
         &times;
       </button>
-    </div>
+    </div> -->
 
     <!-- Chat Messages -->
-    <div id="chat-content" class="p-4 space-y-4 text-sm max-h-[400px] overflow-y-auto flex-1"></div>
+    <!-- <div id="chat-content" class="p-4 space-y-4 text-sm max-h-[400px] overflow-y-auto flex-1"></div> -->
 
     <!-- Chat Input -->
-    <div id="chat-input-area" class="p-4 border-t text-sm bg-gray-50">
+    <!-- <div id="chat-input-area" class="p-4 border-t text-sm bg-gray-50">
       <button id="start-btn" onclick="startChat()" class="bg-orange-500 text-white px-4 py-2 rounded w-full hover:bg-orange-600 transition">Start</button>
     </div>
   </div>
-</div>
-
+</div> -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/687fe23a29adad191a62a82a/1j0pondin';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 <!-- Font Awesome for Icons -->
 <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
