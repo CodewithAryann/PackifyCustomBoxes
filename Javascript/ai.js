@@ -159,3 +159,10 @@ function toggleChat() {
     resetChat();
   }
 }
+
+document.getElementById('ai-chatbot').addEventListener('click', () => {
+  const notif = document.getElementById('ai-notif');
+  if (notif) {
+    notif.style.display = 'none';
+  }
+});
