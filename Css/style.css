@@ -615,3 +615,55 @@ header {
         font-size: 0.95rem;
       }
     }
+
+/* Chat message bubbles */
+    #chat-content div {
+      max-width: 80%;
+      word-wrap: break-word;
+      padding: 8px 12px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    #chat-content .text-gray-800 {
+      background: #f3f4f6;
+      color: #1f2937;
+      align-self: flex-start;
+    }
+    #chat-content .text-right {
+      background: #fb923c;
+      color: white;
+      align-self: flex-end;
+    }
+
+    /* Input style */
+    .input-style {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      outline: none;
+      font-size: 14px;
+    }
+    .input-style:focus {
+      border-color: #fb923c;
+      box-shadow: 0 0 0 2px rgba(251, 146, 60, 0.5);
+    }
+
+    /* Option buttons */
+    .option-btn {
+      background-color: #fb923c;
+      color: white;
+      padding: 8px 0;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.2s;
+      width: 100%;
+      cursor: pointer;
+      border: none;
+      user-select: none;
+    }
+    .option-btn:hover {
+      background-color: #f97316;
+    }
+
