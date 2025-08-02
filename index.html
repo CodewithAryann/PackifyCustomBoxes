@@ -20,6 +20,12 @@
 <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- SwiperJS CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-orange-800 z-[1000] flex flex-col items-center justify-center transition-all duration-700">
@@ -100,8 +106,8 @@
     <!-- Right Media Block -->
 <div class="relative w-full h-full flex items-center justify-center px-6 py-10">
   <video 
-    src="/Images/hero-video.mp4" 
-    poster="/Images/hero-video.mp4" 
+    src="/Images/packify-customboxes.mp4" 
+    poster="/Images/packify-customboxes.mp4" 
     autoplay 
     loop 
     muted 
@@ -159,7 +165,37 @@
     </div>
   </div>
 </section>
+<section class=" py-12">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-2xl md:text-4xl font-extrabold text-gray-800 mb-10">
+      Trusted By <span class="text-orange-500">3,000+</span> Businesses
+    </h2>
 
+    <!-- Logo Slider -->
+<div class="overflow-hidden relative w-full py-6">
+  <div class="flex animate-scroll space-x-12">
+
+    <!-- US Companies Logos (CDN Links) -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/logo-vector-graphics-brand-walmart-portable-network-graphics-png-favpng-RNmwyt5haE5GzqfvtZfVWaRk3-removebg-preview.png" alt="Walmart" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/133-1330613_fedex-logo-vector-by-windytheplaneh-on-deviantart-fedex-logo-vector-by-windytheplaneh-removebg-preview.png" alt="FedEx" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/kellogg-s-breakfast-cereal-logo-brand-png-favpng-5ffzujXjcArjYsMPn2P9a2FD1-removebg-preview.png" alt="Kellogg’s" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/target-logo-target-icon-transparent-free-png.webp" alt="Target" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+
+    <!-- Duplicate for Infinite Scroll -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/logo-vector-graphics-brand-walmart-portable-network-graphics-png-favpng-RNmwyt5haE5GzqfvtZfVWaRk3-removebg-preview.png" alt="Walmart" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/133-1330613_fedex-logo-vector-by-windytheplaneh-on-deviantart-fedex-logo-vector-by-windytheplaneh-removebg-preview.png" alt="FedEx" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/kellogg-s-breakfast-cereal-logo-brand-png-favpng-5ffzujXjcArjYsMPn2P9a2FD1-removebg-preview.png" alt="Kellogg’s" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="Images/target-logo-target-icon-transparent-free-png.webp" alt="Target" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="h-12 object-contain transition duration-300 grayscale hover:grayscale-0" />
+  </div>
+</div>
+
+</section>
 
  <section class="type py-16 bg-white" id="type">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -397,6 +433,52 @@
     
   </div>
 </section>
+
+<!-- Hero / Features Section -->
+<section class="relative bg-white py-16 px-6 text-center">
+  <div class="max-w-5xl mx-auto space-y-10">
+    
+    <!-- Main Heading -->
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+      Premium Custom Boxes Designed to Elevate <span class=" text-[#f97316]">Your Brand</span> 
+    </h1>
+    
+    <!-- Subtext -->
+    <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+      Fully printed. Fast turnaround. Eco-conscious. Made to impress — inside and out.
+      Free U.S. Shipping. No Minimums. Delivered Worldwide.
+    </p>
+    
+    <!-- Features -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 mt-12">
+      <div class="bg-white p-6 rounded-2xl shadow transition hover:bg-[#f97316] hover:text-white">
+        <p class="font-semibold">Over 3,000 happy clients</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow transition hover:bg-[#f97316] hover:text-white">
+        <p class="font-semibold">Eco-friendly materials</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow transition hover:bg-[#f97316] hover:text-white">
+        <p class="font-semibold">Price Match Guarantee</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow transition hover:bg-[#f97316] hover:text-white">
+        <p class="font-semibold">24/7 design support</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow transition hover:bg-[#f97316] hover:text-white">
+        <p class="font-semibold">Fast 10-day delivery</p>
+      </div>
+    </div>
+    
+    <!-- Call-to-Action Button -->
+    <div class="mt-12">
+      <a href="get-quote.html"
+         class="inline-block bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold text-lg py-4 px-8 rounded-full shadow-lg transition">
+        Start Your Custom Box
+      </a>
+    </div>
+
+  </div>
+</section>
+
 
   <section class="max-w-6xl mx-auto my-16 px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
   <!-- Left Content -->
@@ -744,7 +826,6 @@
     </div>
   </div>
 </section>
-
  <!-- Blog Preview Section -->
   <section class="max-w-6xl mx-auto px-4 py-16 pt-1">
     <div class="flex items-center justify-between mb-6">
@@ -785,7 +866,7 @@
     </div>
   </section>
 
-<section class="py-16 bg-gray-50">
+<section class="py-16 bg-white">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" id="quote">
     <div class="text-center mb-10">
       <h2 class="text-3xl sm:text-4xl font-extrabold text-orange-500 mb-4">
@@ -856,7 +937,83 @@
   </div>
 </section>
 
+<!-- Social Proof Section -->
+<section class="bg-white py-20">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+      Loved by <span class="text-orange-500">Businesses Worldwide</span>
+    </h2>
+    <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+      Our customers trust PackifyCustomBoxes to deliver premium, eco‑friendly packaging solutions that elevate their brands.
+    </p>
 
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper pb-12">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide">
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+            <img src="Images/photo-1595514191830-3e96a518989b.avif" 
+     class="w-20 h-20 rounded-full mb-4 border-4 border-[#f97316] shadow-lg object-cover mx-auto" 
+     alt="Client 1">
+            <p class="text-gray-600 italic mb-4">
+              “Absolutely love our new custom boxes! The quality is top-notch and delivery was super fast.”
+            </p>
+            <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+            <span class="text-sm text-gray-500">Amazon Seller</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide">
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+            <img src="Images/mark-farias-dt60oksDTx8-unsplash.jpg" 
+     class="w-20 h-20 rounded-full mb-4 border-4 border-[#f97316] shadow-lg object-cover mx-auto" 
+     alt="Client 1">
+            <p class="text-gray-600 italic mb-4">
+              “We switched to PackifyCustomBoxes and saw an instant boost in customer satisfaction.”
+            </p>
+            <h4 class="font-semibold text-gray-800">Omar Khalid</h4>
+            <span class="text-sm text-gray-500">Small Business Owner</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide">
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+            <img src="Images/marie-michele-bouchard-3U9BCWHMhUw-unsplash.jpg" 
+     class="w-20 h-20 rounded-full mb-4 border-4 border-[#f97316] shadow-lg object-cover mx-auto" 
+     alt="Client 1">
+            <p class="text-gray-600 italic mb-4">
+              “High quality, eco-friendly packaging that truly represents our brand. Highly recommended!”
+            </p>
+            <h4 class="font-semibold text-gray-800">Emily Carter</h4>
+            <span class="text-sm text-gray-500">E‑commerce Manager</span>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="swiper-slide">
+          <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+            <img src="Images/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg" 
+     class="w-20 h-20 rounded-full mb-4 border-4 border-[#f97316] shadow-lg object-cover mx-auto" 
+     alt="Client 1">
+            <p class="text-gray-600 italic mb-4">
+              “The packaging quality exceeded our expectations. Customers keep complimenting it!”
+            </p>
+            <h4 class="font-semibold text-gray-800">Liam Patel</h4>
+            <span class="text-sm text-gray-500">Retailer</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination Dots Only -->
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </div>
+</section>
   
  <footer class="bg-orange-500 text-white px-6 py-10 rounded-t-[2rem]">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -1102,6 +1259,30 @@ s0.parentNode.insertBefore(s1,s0);
     // Optionally, reset the form
     form.reset();
   }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 30,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true, // Pause on hover
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  });
 </script>
 
 </body>
