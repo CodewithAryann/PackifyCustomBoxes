@@ -12,6 +12,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Change text selection color */
+::selection {
+  background-color: #f97316; /* Your custom orange */
+  color: white; /* Text color when selected */
+}
+
+/* For Firefox (it uses a different selector) */
+::-moz-selection {
+  background-color: #f97316;
+  color: white;
+}
+
 #loader {
   height: 100%;
   width: 100%;
