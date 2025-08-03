@@ -57,21 +57,21 @@ const productData = {
 };
 
 
-  function openModalById(id) {
-    const product = productData[id];
-    if (!product) return;
+function openModalById(id) {
+  const product = productData[id];
+  if (!product) return;
 
-    document.getElementById("modalTitle").innerText = product.title;
-    document.getElementById("modalImage").src = product.image;
-    document.getElementById("modalDesc").innerText = product.description;
+  document.getElementById("modalTitle").innerText = product.title;
+  document.getElementById("modalImage").src = product.image;
+  document.getElementById("modalDesc").innerText = product.description;
 
-    const modal = document.getElementById("productModal");
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-  }
+  const modal = document.getElementById("productModal");
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+}
 
-  function closeModal() {
-    const modal = document.getElementById("productModal");
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-  }
+function closeModal() {
+  const modal = document.getElementById("productModal");
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+}
