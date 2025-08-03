@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Product Quote | Elite Custom Boxes</title>
   <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -12,6 +13,7 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+
     .image-container {
       position: relative;
       width: 100%;
@@ -19,6 +21,7 @@
       overflow: hidden;
       border-radius: 0.75rem;
     }
+
     .image-container img {
       position: absolute;
       width: 100%;
@@ -26,22 +29,27 @@
       object-fit: cover;
       transition: opacity 0.5s ease;
     }
+
     .hover-image {
       opacity: 0;
     }
+
     .image-container:hover .hover-image {
       opacity: 1;
     }
+
     .image-container:hover .main-image {
       opacity: 0;
     }
   </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
   <header class="bg-white border-b shadow-sm sticky top-0 z-30">
     <div class="max-w-7xl mx-auto justify-between items-center px-6 py-4">
-      <h1 class="text-xl text-center font-bold text-gray-800">Packify<span class="text-orange-500">CustomBoxes</span></h1>
+      <h1 class="text-xl text-center font-bold text-gray-800">Packify<span class="text-orange-500">CustomBoxes</span>
+      </h1>
     </div>
   </header>
 
@@ -51,41 +59,43 @@
     <section class="col-span-1">
       <h3 class="text-xl font-semibold mb-4 text-gray-800">Request Custom Quote</h3>
       <form action="https://formspree.io/f/xvgqgbre" method="POST" class="space-y-4">
-  <div class="grid grid-cols-2 gap-4">
-    <input type="text" name="name" placeholder="Name*" required class="p-3 border rounded-md w-full">
-    <input type="email" name="email" placeholder="Email*" required class="p-3 border rounded-md w-full">
-  </div>
-  <div class="grid grid-cols-2 gap-4">
-    <input type="tel" name="phone" placeholder="Phone" class="p-3 border rounded-md w-full">
-    <input type="text" name="quantity" placeholder="Quantity" class="p-3 border rounded-md w-full">
-  </div>
-  <div class="grid grid-cols-3 gap-4">
-    <input type="text" name="length" placeholder="Length (in)" class="p-3 border rounded-md w-full">
-    <input type="text" name="width" placeholder="Width (in)" class="p-3 border rounded-md w-full">
-    <input type="text" name="depth" placeholder="Depth (in)" class="p-3 border rounded-md w-full">
-  </div>
-  <div class="grid grid-cols-2 gap-4">
-    <select name="material" class="p-3 border rounded-md w-full">
-      <option>Material</option>
-      <option>Cardboard</option>
-      <option>Kraft</option>
-      <option>Corrugated</option>
-    </select>
-    <select name="printed_side" class="p-3 border rounded-md w-full">
-      <option>Printed Side</option>
-      <option>Outside Only</option>
-      <option>Inside & Outside</option>
-    </select>
-  </div>
-  <textarea name="message" rows="4" required placeholder="Please describe your product and packaging requirements..." class="p-3 border rounded-md w-full"></textarea>
-  
-  <!-- Optional redirect after submission -->
-  <input type="hidden" name="_next" value="thankyou.html" />
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" name="name" placeholder="Name*" required class="p-3 border rounded-md w-full">
+          <input type="email" name="email" placeholder="Email*" required class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <input type="tel" name="phone" placeholder="Phone" class="p-3 border rounded-md w-full">
+          <input type="text" name="quantity" placeholder="Quantity" class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <input type="text" name="length" placeholder="Length (in)" class="p-3 border rounded-md w-full">
+          <input type="text" name="width" placeholder="Width (in)" class="p-3 border rounded-md w-full">
+          <input type="text" name="depth" placeholder="Depth (in)" class="p-3 border rounded-md w-full">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <select name="material" class="p-3 border rounded-md w-full">
+            <option>Material</option>
+            <option>Cardboard</option>
+            <option>Kraft</option>
+            <option>Corrugated</option>
+          </select>
+          <select name="printed_side" class="p-3 border rounded-md w-full">
+            <option>Printed Side</option>
+            <option>Outside Only</option>
+            <option>Inside & Outside</option>
+          </select>
+        </div>
+        <textarea name="message" rows="4" required
+          placeholder="Please describe your product and packaging requirements..."
+          class="p-3 border rounded-md w-full"></textarea>
 
-  <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded hover:bg-orange-600 transition">
-    Request a Quote
-  </button>
-</form>
+        <!-- Optional redirect after submission -->
+        <input type="hidden" name="_next" value="thankyou.html" />
+
+        <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded hover:bg-orange-600 transition">
+          Request a Quote
+        </button>
+      </form>
 
     </section>
   </main>
@@ -98,118 +108,118 @@
 
     // ✅ Product Data
     const data = [
-     {
-  id: "mailer",
-  title: "Custom Mailer Boxes",
-  image: "Images/Custom-box.png",
-  hoverImage: "Images/Custom-box-hover.jpg",
-  description: "Offer secure, stylish packaging for e-commerce and subscription products. Designed for durability and brand impact, they enhance presentation and protect contents during transit."
-},
-{
-  id: "folding",
-  title: "Tuck Boxes",
-  image: "Images/Kraft-Tuck-Top-Gift-Box-Mockup.jpg",
-  hoverImage: "Images/Kraft-Box-Packaging-Mockup-1536x1336.jpg",
-  description: "Offer secure, stylish packaging for e-commerce and subscription products. Designed for durability and brand impact, they enhance presentation and protect contents during transit."
-},
-{
-  id: "rigid",
-  title: "Rigid Boxes",
-  image: "Images/Two-Piece-Box-4.webp",
-  hoverImage: "Images/Overall-Rigid-Box2.png",
-  description: "Premium, sturdy packaging solutions ideal for luxury products. With a high-end finish and solid structure, they deliver an exceptional unboxing experience and strong brand presence."
-},
-{
-  id: "shipping",
-  title: "Dispenser Boxes",
-  image: "Images/Custom-Gravity-Feed-Dispenser-Boxes4.webp",
-  hoverImage: "Images/cardboard-label-dispenser-boxes.webp",
-  description: "Compact and practical, dispenser boxes allow easy access to products while keeping them neatly organized—ideal for retail, medical, or everyday use."
-},
-{
-  id: "gift",
-  title: "Cigarette Boxes",
-  image: "Images/custom-printed-pre-roll-cigarette-boxes__35604.jpg",
-  hoverImage: "Images/child-resistant-pre-roll-box.webp",
-  description: "Stylish and protective, cigarette boxes are designed to preserve freshness and enhance brand appeal with customizable finishes, sizes, and secure closures."
-},
-{
-  id: "eco-friendly",
-  title: "Eco-Friendly Boxes",
-  image: "Images/Custom-box-5.webp",
-  hoverImage: "Images/Custom-box-5-hover.webp",
-  description: "Sustainable packaging made from recycled materials, combining durability with an environmentally conscious design. Ideal for brands focused on green practices without compromising quality."
-},
-{
-  id: "sleeve",
-  title: "Sleeve Boxes",
-  image: "Images/Custom-box-6.png",
-  hoverImage: "Images/Custom-box-6-hover.jpeg",
-  description: "Feature a sliding cover design that adds style and protection to your products. They’re perfect for enhancing brand presentation with a sleek, premium look."
-},
-{
-  id: "bottle",
-  title: "Bottle Boxes",
-  image: "Images/Custom-box-8.jpg",
-  hoverImage: "Images/Custom-box-8-hover.jpg",
-  description: "Designed to securely hold and showcase bottles, making them ideal for beverages, cosmetics, or fragrances. They offer both protection and a premium presentation."
-},
-{
-  id: "pillow",
-  title: "Pillow Boxes",
-  image: "Images/Custom-box-9.jpg",
-  hoverImage: "Images/custom-box-9-hover.jpg",
-  description: "Curved design that's perfect for small, lightweight items like gifts, accessories, or cosmetics. Compact and stylish, they offer a simple yet elegant packaging solution."
-},
-{
-  id: "gable",
-  title: "Gable Boxes",
-  image: "Images/Custom-box-10.webp",
-  hoverImage: "Images/Custom-box-10-hover.webp",
-  description: "Portability with their built-in handle and unique shape. Ideal for food, gifts, or events, they offer both function and visual appeal in one compact design."
-},
-{
-  id: "corrugated-trays",
-  title: "Corrugated Trays",
-  image: "Images/Custom-box-11.webp",
-  hoverImage: "Images/Custom-box-11-hover.jpg",
-  description: "Sturdy, open-top packaging solutions ideal for displaying or transporting multiple items. Lightweight yet strong, they’re perfect for retail shelves, storage, and shipping efficiency."
-},
-{
-  id: "book",
-  title: "Custom Book Boxes",
-  image: "Images/Custom-box-12.jpg",
-  hoverImage: "Images/Custom-box-12-hover.jpg",
-  description: "Protective packaging designed to resemble books, perfect for gifting, keepsakes, or premium product presentation. They combine durability with a unique, stylish appeal."
-},
-{
-  id: "burger",
-  title: "Burger Boxes",
-  image: "Images/Burger-Boxes.jpg",
-  hoverImage: "Images/kraft-paper-food-packaging-boxes.jpg",
-  description: "Designed to keep your burgers fresh, secure, and visually appealing. Perfect for dine-in, takeout, or delivery, they offer durability, insulation, and custom branding options."
-},
-{
-  id: "magnetic",
-  title: "Magnetic Closure",
-  image: "Images/Custom-box-14.jpg",
-  hoverImage: "Images/Custom-box-14-hover.jpg",
-  description: "Premium unboxing experience with their sleek design and secure magnetic flap. Ideal for luxury products and gifts, they combine elegance with functionality."
-},
-{
-  id: "bakery",
-  title: "Custom Bakery Boxes",
-  image: "Images/Custom-box-15.jpg",
-  hoverImage: "Images/Custom-box-15-hover.jpg",
-  description: "Keep baked goods fresh, protected, and beautifully presented. Perfect for cakes, pastries, and treats, they offer both charm and functionality for bakeries and events."
-},
-{
-  id: "cosmetic",
-  title: "Cosmetic Boxes",
-  image: "Images/Custom-box-16.png",
-  hoverImage: "Images/Custom-box-16-hover.png",
-  description: "Enhance your brand’s image while securely packaging skincare and beauty products. Sleek, durable, and fully customizable, they’re perfect for both retail display and gifting."
-}
+      {
+        id: "mailer",
+        title: "Custom Mailer Boxes",
+        image: "Images/Custom-box.png",
+        hoverImage: "Images/Custom-box-hover.jpg",
+        description: "Offer secure, stylish packaging for e-commerce and subscription products. Designed for durability and brand impact, they enhance presentation and protect contents during transit."
+      },
+      {
+        id: "folding",
+        title: "Tuck Boxes",
+        image: "Images/Kraft-Tuck-Top-Gift-Box-Mockup.jpg",
+        hoverImage: "Images/Kraft-Box-Packaging-Mockup-1536x1336.jpg",
+        description: "Offer secure, stylish packaging for e-commerce and subscription products. Designed for durability and brand impact, they enhance presentation and protect contents during transit."
+      },
+      {
+        id: "rigid",
+        title: "Rigid Boxes",
+        image: "Images/Two-Piece-Box-4.webp",
+        hoverImage: "Images/Overall-Rigid-Box2.png",
+        description: "Premium, sturdy packaging solutions ideal for luxury products. With a high-end finish and solid structure, they deliver an exceptional unboxing experience and strong brand presence."
+      },
+      {
+        id: "shipping",
+        title: "Dispenser Boxes",
+        image: "Images/Custom-Gravity-Feed-Dispenser-Boxes4.webp",
+        hoverImage: "Images/cardboard-label-dispenser-boxes.webp",
+        description: "Compact and practical, dispenser boxes allow easy access to products while keeping them neatly organized—ideal for retail, medical, or everyday use."
+      },
+      {
+        id: "gift",
+        title: "Cigarette Boxes",
+        image: "Images/custom-printed-pre-roll-cigarette-boxes__35604.jpg",
+        hoverImage: "Images/child-resistant-pre-roll-box.webp",
+        description: "Stylish and protective, cigarette boxes are designed to preserve freshness and enhance brand appeal with customizable finishes, sizes, and secure closures."
+      },
+      {
+        id: "eco-friendly",
+        title: "Eco-Friendly Boxes",
+        image: "Images/Custom-box-5.webp",
+        hoverImage: "Images/Custom-box-5-hover.webp",
+        description: "Sustainable packaging made from recycled materials, combining durability with an environmentally conscious design. Ideal for brands focused on green practices without compromising quality."
+      },
+      {
+        id: "sleeve",
+        title: "Sleeve Boxes",
+        image: "Images/Custom-box-6.png",
+        hoverImage: "Images/Custom-box-6-hover.jpeg",
+        description: "Feature a sliding cover design that adds style and protection to your products. They’re perfect for enhancing brand presentation with a sleek, premium look."
+      },
+      {
+        id: "bottle",
+        title: "Bottle Boxes",
+        image: "Images/Custom-box-8.jpg",
+        hoverImage: "Images/Custom-box-8-hover.jpg",
+        description: "Designed to securely hold and showcase bottles, making them ideal for beverages, cosmetics, or fragrances. They offer both protection and a premium presentation."
+      },
+      {
+        id: "pillow",
+        title: "Pillow Boxes",
+        image: "Images/Custom-box-9.jpg",
+        hoverImage: "Images/custom-box-9-hover.jpg",
+        description: "Curved design that's perfect for small, lightweight items like gifts, accessories, or cosmetics. Compact and stylish, they offer a simple yet elegant packaging solution."
+      },
+      {
+        id: "gable",
+        title: "Gable Boxes",
+        image: "Images/Custom-box-10.webp",
+        hoverImage: "Images/Custom-box-10-hover.webp",
+        description: "Portability with their built-in handle and unique shape. Ideal for food, gifts, or events, they offer both function and visual appeal in one compact design."
+      },
+      {
+        id: "corrugated-trays",
+        title: "Corrugated Trays",
+        image: "Images/Custom-box-11.webp",
+        hoverImage: "Images/Custom-box-11-hover.jpg",
+        description: "Sturdy, open-top packaging solutions ideal for displaying or transporting multiple items. Lightweight yet strong, they’re perfect for retail shelves, storage, and shipping efficiency."
+      },
+      {
+        id: "book",
+        title: "Custom Book Boxes",
+        image: "Images/Custom-box-12.jpg",
+        hoverImage: "Images/Custom-box-12-hover.jpg",
+        description: "Protective packaging designed to resemble books, perfect for gifting, keepsakes, or premium product presentation. They combine durability with a unique, stylish appeal."
+      },
+      {
+        id: "burger",
+        title: "Burger Boxes",
+        image: "Images/Burger-Boxes.jpg",
+        hoverImage: "Images/kraft-paper-food-packaging-boxes.jpg",
+        description: "Designed to keep your burgers fresh, secure, and visually appealing. Perfect for dine-in, takeout, or delivery, they offer durability, insulation, and custom branding options."
+      },
+      {
+        id: "magnetic",
+        title: "Magnetic Closure",
+        image: "Images/Custom-box-14.jpg",
+        hoverImage: "Images/Custom-box-14-hover.jpg",
+        description: "Premium unboxing experience with their sleek design and secure magnetic flap. Ideal for luxury products and gifts, they combine elegance with functionality."
+      },
+      {
+        id: "bakery",
+        title: "Custom Bakery Boxes",
+        image: "Images/Custom-box-15.jpg",
+        hoverImage: "Images/Custom-box-15-hover.jpg",
+        description: "Keep baked goods fresh, protected, and beautifully presented. Perfect for cakes, pastries, and treats, they offer both charm and functionality for bakeries and events."
+      },
+      {
+        id: "cosmetic",
+        title: "Cosmetic Boxes",
+        image: "Images/Custom-box-16.png",
+        hoverImage: "Images/Custom-box-16-hover.png",
+        description: "Enhance your brand’s image while securely packaging skincare and beauty products. Sleek, durable, and fully customizable, they’re perfect for both retail display and gifting."
+      }
     ];
 
     // ✅ Load Product Details
@@ -240,8 +250,5 @@
 
   </script>
 </body>
+
 </html>
-
-
-
-

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get Custom Quote</title>
   <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-[#f9f9f9] text-gray-800">
 
   <section class="max-w-4xl mx-auto px-6 py-16">
@@ -19,17 +21,18 @@
     </div>
 
     <!-- Form -->
-    <form class="bg-white shadow-xl rounded-xl p-8 space-y-6" action="https://usebasin.com/f/a24a59909c70" method="POST">
+    <form class="bg-white shadow-xl rounded-xl p-8 space-y-6" action="https://usebasin.com/f/a24a59909c70"
+      method="POST">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label class="block mb-1 text-sm font-medium text-gray-700">Full Name</label>
           <input type="text" name="name" placeholder="John Doe" required
-                 class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
         <div>
           <label class="block mb-1 text-sm font-medium text-gray-700">Email Address</label>
           <input type="email" name="email" placeholder="you@example.com" required
-                 class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
       </div>
 
@@ -37,83 +40,85 @@
         <div>
           <label class="block mb-1 text-sm font-medium text-gray-700">Product Type</label>
           <input type="text" name="product" placeholder="e.g., Custom Mailer Box"
-                 class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
         <div>
           <label class="block mb-1 text-sm font-medium text-gray-700">Quantity</label>
           <input type="number" name="quantity" placeholder="e.g., 1000"
-                 class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
         </div>
       </div>
 
       <div>
         <label class="block mb-1 text-sm font-medium text-gray-700">Message / Additional Requirements</label>
         <textarea name="message" rows="4" placeholder="Describe your design preferences, dimensions, materials, etc."
-                  class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
       </div>
-       <!-- File Upload -->
-  <div>
-    <label for="file" class="block text-sm font-medium text-gray-700">Attach Design or Reference File (optional)</label>
-    <input type="file" id="file" name="file"
-           class="mt-1 w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4
+      <!-- File Upload -->
+      <div>
+        <label for="file" class="block text-sm font-medium text-gray-700">Attach Design or Reference File
+          (optional)</label>
+        <input type="file" id="file" name="file" class="mt-1 w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4
                   file:rounded-md file:border-0 file:text-sm file:font-semibold
                   file:bg-orange-50 file:text-orange-600
                   hover:file:bg-orange-100 transition" />
-  </div>
+      </div>
 
       <div class="text-center">
         <button type="submit"
-                class="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-md transition">
+          class="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-6 py-3 rounded-md transition">
           Submit Quote Request
         </button>
       </div>
     </form>
   </section>
-<!-- WhatsApp Floating Button with Tooltip -->
-<div class="fixed bottom-6 left-6 z-50 flex flex-col items-start space-y-2">
+  <!-- WhatsApp Floating Button with Tooltip -->
+  <div class="fixed bottom-6 left-6 z-50 flex flex-col items-start space-y-2">
 
-  <!-- Tooltip -->
-  <div id="wa-tooltip"
-       class="hidden bg-white text-sm text-gray-700 rounded-lg shadow-md flex items-center gap-2 relative w-max max-w-[220px] animate-fade-in p-[10px]">
-    Have questions? Chat with us!
+    <!-- Tooltip -->
+    <div id="wa-tooltip"
+      class="hidden bg-white text-sm text-gray-700 rounded-lg shadow-md flex items-center gap-2 relative w-max max-w-[220px] animate-fade-in p-[10px]">
+      Have questions? Chat with us!
 
-    <!-- Close Button -->
-    <button onclick="hideTooltip()"
-            class="absolute -top-2 -right-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full text-xs w-5 h-5 flex items-center justify-center font-bold shadow-sm">
-      &times;
-    </button>
+      <!-- Close Button -->
+      <button onclick="hideTooltip()"
+        class="absolute -top-2 -right-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full text-xs w-5 h-5 flex items-center justify-center font-bold shadow-sm">
+        &times;
+      </button>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/971501234567?text=Hi%2C%20I'm%20interested%20in%20custom%20boxes%20and%20would%20like%20to%20know%20more."
+      target="_blank"
+      class="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300">
+
+      <!-- WhatsApp Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M16.72 13.06c-.29-.14-1.7-.83-1.96-.93-.26-.1-.45-.14-.63.14s-.72.93-.88 1.12c-.16.2-.32.22-.6.08-.29-.14-1.22-.45-2.32-1.44-.86-.76-1.44-1.7-1.6-1.98-.17-.28-.02-.43.13-.57.14-.14.31-.36.45-.54.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.14-.63-1.52-.86-2.09-.23-.55-.46-.48-.63-.48s-.36-.02-.55-.02c-.2 0-.53.08-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.14.2 2.13 3.25 5.18 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.7-.7 1.94-1.38.24-.7.24-1.3.16-1.43-.08-.12-.26-.2-.54-.34z" />
+      </svg>
+
+      <!-- Notification Badge -->
+      <span id="wa-badge"
+        class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow">
+        1
+      </span>
+    </a>
   </div>
-
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/971501234567?text=Hi%2C%20I'm%20interested%20in%20custom%20boxes%20and%20would%20like%20to%20know%20more."
-     target="_blank"
-     class="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300">
-
-    <!-- WhatsApp Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M16.72 13.06c-.29-.14-1.7-.83-1.96-.93-.26-.1-.45-.14-.63.14s-.72.93-.88 1.12c-.16.2-.32.22-.6.08-.29-.14-1.22-.45-2.32-1.44-.86-.76-1.44-1.7-1.6-1.98-.17-.28-.02-.43.13-.57.14-.14.31-.36.45-.54.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.14-.63-1.52-.86-2.09-.23-.55-.46-.48-.63-.48s-.36-.02-.55-.02c-.2 0-.53.08-.8.37-.27.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.14.2 2.13 3.25 5.18 4.56.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.7-.7 1.94-1.38.24-.7.24-1.3.16-1.43-.08-.12-.26-.2-.54-.34z"/>
-    </svg>
-
-    <!-- Notification Badge -->
-    <span id="wa-badge"
-          class="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow">
-      1
-    </span>
-  </a>
-</div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/687ff2649e6e70191a1b4f39/1j0pslmr5';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-<script src="Javascript/whatapp.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/687ff2649e6e70191a1b4f39/1j0pslmr5';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+  <script src="Javascript/whatapp.js"></script>
 </body>
+
 </html>
