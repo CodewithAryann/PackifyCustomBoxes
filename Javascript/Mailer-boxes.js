@@ -1,7 +1,7 @@
 const productData = {
   "bubble-mailer": {
     title: "Custom Bubble",
-    image: "Images/Bubble Mailer Box.png",
+    image: "Images/Custom Bubble Mailers.jpg",
     description: "Protect your shipments with our bubble mailers featuring a padded, bubble-lined interior for cushioning and a sturdy custom-printed exterior that resists punctures and moisture. Perfect for ensuring your products arrive safely and professionally."
   },
   "vinyl-box": {
@@ -36,7 +36,7 @@ const productData = {
   },
   "tuck-top-mailer-boxes": {
     title: "Tuck Top Mailer Boxes",
-    image: "Images/tuck-top-mailer-boxes.webp",
+    image: "Images/Tuck Top Box.png",
     description: "Tuck top mailer boxes feature a secure closing design for easy assembly. Their streamlined style offers both convenience in packaging and protection for a wide range of goods."
   },
   "literature-mailer-boxes": {
@@ -96,7 +96,7 @@ const productData = {
   },
   "mailer-shipping-boxes": {
     title: "Mailer Shipping Boxes",
-    image: "Images/25512e947558-inke_Mailer-Boxes_Custom-Sustainable-Australian-Made-Packaging.webp",
+    image: "Images/Mailer shipping box.png",
     description: "Durable and customizable, mailer shipping boxes are tailored for logistics. They ensure damage-free delivery and can be printed for consistent brand identity."
   },
   "custom-mailer-boxes-with-tear-strip": {
