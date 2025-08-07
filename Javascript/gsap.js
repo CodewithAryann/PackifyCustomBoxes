@@ -121,7 +121,7 @@ gsap.registerPlugin(ScrollTrigger);
 
   
   gsap.from(".why-pic", {
-  x: -30,  // smaller value
+  x: -20,  // smaller value
   opacity: 0,
   duration: 1,
   ease: "power3.out",
@@ -133,7 +133,7 @@ gsap.registerPlugin(ScrollTrigger);
 });
 
 gsap.from(".why-text", {
-  x: 30,  // smaller value
+  x: 20,  // smaller value
   opacity: 0,
   duration: 1,
   ease: "power3.out",
