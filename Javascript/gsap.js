@@ -117,29 +117,62 @@ gsap.registerPlugin(ScrollTrigger);
     ease: "power3.out"
   });
 
-  gsap.registerPlugin(ScrollTrigger);
+ gsap.registerPlugin(ScrollTrigger);
 
-  
-  gsap.from(".why-pic", {
-  x: -20,  // smaller value
-  opacity: 0,
-  duration: 1,
-  ease: "power3.out",
-  scrollTrigger: {
-    trigger: ".why-pic",
-    start: "top 80%",
-    toggleActions: "play none none reverse"
-  }
-});
+const mm = gsap.matchMedia();
 
-gsap.from(".why-text", {
-  x: 20,  // smaller value
-  opacity: 0,
-  duration: 1,
-  ease: "power3.out",
-  scrollTrigger: {
-    trigger: ".why-text",
-    start: "top 80%",
-    toggleActions: "play none none reverse"
+mm.add({
+  // Desktop and larger screens
+  "(min-width: 768px)": () => {
+    gsap.from(".why-pic", {
+      x: -20,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".why-pic",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
+
+    gsap.from(".why-text", {
+      x: 20,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".why-text",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
+  },
+
+  // Mobile screens
+  "(max-width: 767px)": () => {
+    gsap.from(".why-pic", {
+      x: -10,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".why-pic",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
+
+    gsap.from(".why-text", {
+      x: 10,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".why-text",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+      }
+    });
   }
 });
