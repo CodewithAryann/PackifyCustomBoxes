@@ -49,42 +49,91 @@
 
   </div>
 
-  <header>
-    <div class="logo">
-      <h1 class="text-2xl text-center font-bold text-white">Packify<span class="text-orange-500">CustomBoxes</span></h1>
+<header class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur text-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between relative 
+            lg:px-[65px] lg:py-[18px] lg:gap-[12%] lg:justify-start">
+
+    <!-- Logo (centered on mobile) -->
+    <div class="w-full text-center lg:text-left lg:w-auto">
+      <h1 class="text-xl sm:text-2xl font-bold">
+        Packify<span class="text-orange-500">CustomBoxes</span>
+      </h1>
     </div>
 
-    <nav class="navbar" id="nav-links">
-      <a href="index.html">Home</a>
-      <div class="dropdown">
-        <a href="#about">About</a>
-      </div>
-      <div class="dropdown">
-        <a href="#type">Types of Boxes</a>
-        <div class="dropdown-content">
-          <a href="Custom-Mailer-Boxes.html">Mailer Boxes</a>
-          <a href="Custom-tuck-boxes.html">Tuck Boxes</a>
-          <a href="rigid-boxes.html">Rigid Boxes</a>
-          <a href="Dispenser-Boxes.html">Dispenser Boxes</a>
-          <a href="Cigarette-Boxes.html">Cigarette Boxes</a>
-          <a href="Burger-boxes.html">Burger Boxes</a>
-          <a href="Magnetic-closure.html">Magnetic Closure</a>
-          <a href="Cosmetic-Boxes.html">Cosmetic Boxes</a>
+    <!-- Hamburger Button -->
+    <button id="hamburger" class="lg:hidden absolute right-4 top-4 z-50 flex flex-col gap-1 focus:outline-none mt-[5px]">
+      <span class="block w-6 h-0.5 bg-white transition-all"></span>
+      <span class="block w-6 h-0.5 bg-white transition-all"></span>
+      <span class="block w-6 h-0.5 bg-white transition-all"></span>
+    </button>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden lg:flex gap-6 items-center font-medium">
+      <a href="index.html" class="hover:text-orange-400 transition">Home</a>
+      <a href="#about" class="hover:text-orange-400 transition">About</a>
+      <div class="group relative">
+        <button class="flex items-center gap-1 hover:text-orange-400 transition focus:outline-none">
+          Types of Boxes
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <!-- Dropdown -->
+        <div class="absolute left-1/2 -translate-x-1/2 mt-3 w-48 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
+          <a href="Custom-Mailer-Boxes.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Mailer Boxes</a>
+          <a href="Custom-tuck-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Tuck Boxes</a>
+          <a href="rigid-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Rigid Boxes</a>
+          <a href="Dispenser-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Dispenser Boxes</a>
+          <a href="Cigarette-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Cigarette Boxes</a>
+          <a href="Burger-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Burger Boxes</a>
+          <a href="Magnetic-closure.html" class="block px-4 py-2 hover:bg-gray-100">Magnetic Closure</a>
+          <a href="Cosmetic-Boxes.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Cosmetic Boxes</a>
         </div>
       </div>
-      <a href="#choose">Why Choose Us</a>
-      <a href="#it-works">How it works</a>
-      <a href="#faqs">FAQ</a>
-      <a href="#quote">Request a Quote</a>
+      <a href="#choose" class="hover:text-orange-400 transition">Why Choose Us</a>
+      <a href="#it-works" class="hover:text-orange-400 transition">How it Works</a>
+      <a href="#faqs" class="hover:text-orange-400 transition">FAQ</a>
+      <a href="#quote" class="hover:text-orange-400 transition">Request a Quote</a>
     </nav>
+  </div>
 
-    <!-- Hamburger Icon for mobile -->
-    <div class="hamburger-menu" id="hamburger-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-[#0000] text-white py-6 text-lg flex flex-col space-y-3 items-center text-center lg:hidden">
+  <a href="index.html" class="block w-full hover:text-orange-400 transition">Home</a>
+  <a href="#about" class="block w-full hover:text-orange-400 transition">About</a>
+
+  <!-- Dropdown Button -->
+  <div class="w-full">
+    <button class="w-full py-2 flex justify-center items-center gap-1 hover:text-orange-400 transition dropdown-toggle">
+      Types of Boxes
+      <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <!-- Dropdown Content -->
+    <div class="hidden flex-col bg-white text-gray-800 rounded-b-lg overflow-hidden dropdown-content">
+      <a href="Custom-Mailer-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Mailer Boxes</a>
+      <a href="Custom-tuck-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Tuck Boxes</a>
+      <a href="rigid-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Rigid Boxes</a>
+      <a href="Dispenser-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Dispenser Boxes</a>
+      <a href="Cigarette-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Cigarette Boxes</a>
+      <a href="Burger-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Burger Boxes</a>
+      <a href="Magnetic-closure.html" class="block px-4 py-2 hover:bg-gray-100">Magnetic Closure</a>
+      <a href="Cosmetic-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Cosmetic Boxes</a>
     </div>
-  </header>
+  </div>
+
+  <a href="#choose" class="block w-full hover:text-orange-400 transition">Why Choose Us</a>
+  <a href="#it-works" class="block w-full hover:text-orange-400 transition">How it Works</a>
+  <a href="#faqs" class="block w-full hover:text-orange-400 transition">FAQ</a>
+  <a href="#quote" class="block w-full hover:text-orange-400 transition">Request a Quote</a>
+</div>
+
+</header>
 
   <section class="relative bg-orange-500 text-white overflow-hidden px-[40px] pt-0 pb-0">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center relative z-10 min-h-[400px] pt-[6rem]">
