@@ -194,11 +194,24 @@
     </div>
 
     <!-- Right Media Block -->
-    <div class="relative w-full h-full flex items-center justify-center px-6 py-10">
-      <video src="/Images/packify-customboxes.mp4" poster="/Images/packify-customboxes.mp4" autoplay loop muted playsinline
-        preload="auto" class="rounded-xl shadow-lg w-full max-w-[450px] h-[360px] object-cover">
-      </video>
-    </div>
+<!-- Right Media Block -->
+<div class="relative w-full h-full flex items-center justify-center px-6 py-10 group">
+
+  <!-- Image (Desktop only) -->
+  <img src="/Images/packify-img.jpeg" 
+       alt="Default Image"
+       class="hidden md:block absolute top-[10.5%] left-[11%] w-full max-w-[450px] h-[360px] object-cover rounded-xl shadow-lg transition-opacity duration-500 group-hover:opacity-0 z-10">
+
+  <!-- Video -->
+  <video src="/Images/packify-customboxes.mp4" 
+         poster="/Images/first-image.jpg" 
+         autoplay loop muted playsinline
+         preload="auto" 
+         class="rounded-xl shadow-lg w-full max-w-[450px] h-[360px] object-cover transition-opacity duration-500 md:opacity-0 md:group-hover:opacity-100">
+  </video>
+
+</div>
+
   </div>
 </section>
 
