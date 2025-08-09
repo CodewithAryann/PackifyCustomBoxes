@@ -165,18 +165,18 @@
       </div>
 
   </section> -->
-  <section class="relative text-white overflow-hidden px-[40px] pt-0 pb-0">
+<section class="relative text-white overflow-hidden px-[40px] pt-0 pb-0 group">
   <!-- Background Video -->
   <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted playsinline preload="auto">
     <source src="/Images/IMG_0111.MOV" type="video/mp4" />
   </video>
 
-  <!-- Dark Overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+  <!-- Overlay (hidden on hover) -->
+  <div class="absolute inset-0 bg-[#f97316] bg-opacity-100 group-hover:bg-opacity-0 transition duration-500 z-0"></div>
 
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center relative z-10 min-h-[400px] pt-[6rem]">
     <!-- Left Text Content -->
-   <div class="px-6 pt-[4px] pb-[52px] md:pt-16 md:pb-16 space-y-6 z-20 relative">
+    <div class="px-6 pt-[4px] pb-[52px] md:pt-16 md:pb-16 space-y-6 z-20 relative">
       <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
         Your Packaging. <br />Your Story.
       </h1>
@@ -193,18 +193,18 @@
       </a>
     </div>
 
-    
-<!-- Right Media Block -->
-<div class="relative w-full h-full flex items-center justify-center px-6 py-10 hidden md:flex">
-  <video src="/Images/WhatsApp Video 2025-08-10 at 12.00.20 AM.mp4" 
-         poster="/Images/packify-customboxes.mp4" 
-         autoplay loop muted playsinline
-         preload="auto" 
-         class="rounded-xl shadow-lg w-full max-w-[450px] h-[360px] object-cover">
-  </video>
-</div>
-
+    <!-- Right Media Block -->
+    <div class="relative w-full h-full flex items-center justify-center px-6 py-10 hidden md:flex">
+      <video src="/Images/WhatsApp Video 2025-08-10 at 12.00.20 AM.mp4"
+        poster="/Images/packify-customboxes.mp4"
+        autoplay loop muted playsinline
+        preload="auto"
+        class="rounded-xl shadow-lg w-full max-w-[450px] h-[360px] object-cover">
+      </video>
+    </div>
+  </div>
 </section>
+
 
 
 
