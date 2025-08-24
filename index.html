@@ -48,7 +48,6 @@
 </h1> -->
 
   </div>
-
 <header class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur text-white shadow-md">
   <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between relative 
             lg:px-[65px] lg:py-[18px] lg:gap-[12%] lg:justify-start">
@@ -132,9 +131,7 @@
   <a href="#faqs" class="block w-full hover:text-orange-400 transition">FAQ</a>
   <a href="#quote" class="block w-full hover:text-orange-400 transition">Request a Quote</a>
 </div>
-
 </header>
-
   <!-- <section class="relative bg-orange-500 text-white overflow-hidden px-[40px] pt-0 pb-0">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center relative z-10 min-h-[400px] pt-[6rem]"> -->
       <!-- Reduced min height -->
@@ -165,6 +162,18 @@
       </div>
 
   </section> -->
+<!-- Centered Small Floating Promo (Responsive, Text Center on Mobile) -->
+<div id="promo-banner" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-[#f97316] text-white rounded-lg shadow-lg px-4 py-2 max-w-[90vw] sm:max-w-[18rem] md:max-w-[22rem] lg:max-w-[28rem] text-xs sm:text-sm">
+  <div class="flex flex-col sm:flex-row items-center sm:items-center gap-2">
+    <div class="flex-1 text-center sm:text-left whitespace-normal sm:whitespace-nowrap break-words animate-marquee sm:inline-block">
+      🎉 Get <strong>15% OFF</strong> your first order — use code <strong>WELCOME15</strong>
+    </div>
+    <button id="promo-close" class="text-white hover:text-gray-200 focus:outline-none text-sm">
+      ✕
+    </button>
+  </div>
+</div>
+
 <section class="relative text-white overflow-hidden px-[40px] pt-0 pb-0 group">
   <!-- Background Video -->
   <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted playsinline preload="auto">
@@ -1558,5 +1567,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="Javascript/gsap.js"></script>
+<script>
+  const banner = document.getElementById('promo-banner');
+  const closeBtn = document.getElementById('promo-close');
+
+  closeBtn.addEventListener('click', () => {
+    banner.remove();
+  });
+</script>
+
 </body>
 </html>
