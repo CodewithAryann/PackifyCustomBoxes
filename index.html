@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,20 +9,37 @@
     content="custom packaging boxes, custom printed boxes, luxury rigid packaging, eco-friendly packaging, kraft packaging solutions, custom mailer boxes, custom box manufacturer, wholesale custom packaging, product packaging supplier, custom boxes USA, premium custom boxes, personalized packaging, custom retail packaging, packaging design services USA, custom gift boxes, ecommerce packaging USA" />
   <meta name="author" content="Custom Box USA" />
   <title>Custom Packaging Boxes | Premium & Eco-Friendly | USA</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-papNMH1+K6zQzjBG4KiP9i0l0XG+hVt+lbnT1H3KvL1KDZ5T2mnQKdAiWTxz1XduSROO3nF6eLKgY7PkkW4r5Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
-  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- SwiperJS CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Preconnect for faster Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="Css/style.css">
+
+  <!-- Font Awesome (only one version) -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Swiper CSS (preload to reduce blocking) -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </noscript>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+
+  <!-- Swiper JS (defer so it doesn’t block rendering) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+  <!-- Tailwind CDN (safe, no flash, blocking until loaded) -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 
 <body>
   <div id="loader"
