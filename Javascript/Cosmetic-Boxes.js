@@ -1,27 +1,27 @@
 const productData = {
   "makeup-boxes": {
     title: "Makeup Boxes",
-    image: "Images/make up box.png",
+    image: "Images/make up box.webp",
     description: "Makeup Boxes designed for premium protection and stylish presentation of cosmetic products. These boxes are customizable with vibrant printing options and provide sturdy packaging that enhances your brand’s image."
   },
   "lip-balm-boxes": {
     title: "Lip Balm Boxes",
-    image: "Images/lip balm bx.png",
+    image: "Images/lip balm bx.webp",
     description: "Custom Lip Balm Boxes crafted to securely hold your lip care products. Featuring elegant designs and compact shapes, these boxes offer excellent shelf appeal and durable protection."
   },
   "custom-printed-cream-boxes": {
     title: "Custom Printed Cream Boxes",
-    image: "Images/cream box make up.png",
+    image: "Images/cream box make up.webp",
     description: "High-quality Cream Boxes tailored with custom printing to provide a luxurious feel. Perfect for skincare creams, they protect product integrity while reinforcing brand identity."
   },
   "makeup-tool-boxes": {
     title: "Makeup Tool Boxes",
-    image: "Images/make up tool box.png",
+    image: "Images/make up tool box.webp",
     description: "Makeup Tool Boxes designed for functional and attractive packaging of brushes, sponges, and other beauty tools. Customizable to fit your brand style and product needs."
   },
   "custom-serum-boxes": {
     title: "Custom Serum Boxes",
-    image: "Images/custom serum box.png",
+    image: "Images/custom serum box.webp",
     description: "Serum Boxes crafted for premium skincare packaging. These boxes provide protection and sophistication to highlight the quality of your serums."
   },
   "custom-printed-cosmetic-display-boxes": {
@@ -31,17 +31,17 @@ const productData = {
   },
   "hair-extension-boxes": {
     title: "Hair Extension Boxes",
-    image: "Images/hair extension box.png",
+    image: "Images/hair extension box.webp",
     description: "Sturdy Hair Extension Boxes offering protection and style for your hair products. Customizable with your brand’s colors and logos for a professional look."
   },
   "cosmetic-labels": {
     title: "Cosmetic Labels",
-    image: "Images/cosmetic lables.png",
+    image: "Images/cosmetic lables.webp",
     description: "Custom Cosmetic Labels to enhance product packaging with vibrant colors and lasting adhesive. Perfect for personalizing your cosmetics and maintaining brand consistency."
   },
   "lipstick-boxes": {
     title: "Lipstick Boxes",
-    image: "Images/lipstick boxes.png",
+    image: "Images/lipstick boxes.webp",
     description: "Elegant Lipstick Boxes that protect your products and provide a luxurious unboxing experience. Custom printing available to showcase your brand identity."
   }
 };

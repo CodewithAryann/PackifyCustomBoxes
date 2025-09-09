@@ -1,57 +1,57 @@
 const productData = {
   "tuck-top-boxes": {
     title: "Tuck Top Boxes",
-    image: "Images/Tuck Top Box.png",
+    image: "Images/Tuck Top Box.webp",
     description: "Tuck top boxes feature a simple folding design with a top flap that tucks securely into the front of the box. They’re easy to assemble and popular for retail packaging, offering a neat, streamlined appearance that’s ideal for a wide variety of products."
   },
   "auto-lock-boxes": {
     title: "Auto Lock Boxes",
-    image: "Images/Auto Lock Bottom Box.png",
+    image: "Images/Auto Lock Bottom Box.webp",
     description: "Auto lock boxes are designed for effortless assembly, with a pre-glued bottom that pops into place automatically. This style offers unbeatable convenience and sturdy support, making them a favorite for products needing quick, secure packaging, especially in fast-paced e-commerce and retail settings."
   },
   "tuck-mailer-boxes": {
     title: "Tuck Mailer Boxes",
-    image: "Images/Tuck Mailer Box.png",
+    image: "Images/Tuck Mailer Box.webp",
     description: "Tuck mailer boxes blend sturdy construction with easy assembly. Their tuck-in flaps lock contents in place, providing reliable protection during shipping. This style is perfect for subscription shipments and promotional kits."
   },
   "straight-tuck-end-boxes": {
     title: "Straight Tuck End Boxes",
-    image: "Images/Straight end tuck box.png",
+    image: "Images/Straight end tuck box.webp",
     description: "Straight tuck end boxes feature flaps that tuck in from both the top and bottom on the same side, giving them a seamless, professional look. Their versatility suits everything from cosmetics to small electronics and retail products."
   },
   "kraft-tuck-top-boxes": {
     title: "Kraft Tuck Top Boxes",
-    image: "Images/Kraft TUCK BOX.png",
+    image: "Images/Kraft TUCK BOX.webp",
     description: "Kraft tuck top boxes pair the eco-friendly appeal of kraft paper with the practical tuck top closure. Durable, recyclable, and naturally stylish, they appeal to environmentally-conscious brands and customers seeking minimalist, sustainable packaging."
   },
   "snap-lock-bottom-boxes": {
     title: "Snap Lock Bottom Boxes",
-    image: "Images/Snap lock tuck box.png",
+    image: "Images/Snap lock tuck box.webp",
     description: "Snap lock bottom boxes have interlocking bottom flaps that snap securely together, providing extra reinforcement for heavier products. They’re ideal for goods that need added support, without sacrificing quick assembly."
   },
   "double-wall-tuck-top-boxes": {
     title: "Double Wall Tuck Top Boxes",
-    image: "Images/Double Wall tuck Box.png",
+    image: "Images/Double Wall tuck Box.webp",
     description: "Double wall tuck top boxes include reinforced sidewalls and a sturdy tuck-in top for maximum protection. Their robust structure is perfect for heavier or fragile products, offering extra durability during handling and transit."
   },
   "cbd-tuck-boxes": {
     title: "CBD Tuck Boxes",
-    image: "Images/customized-cbd-tuck-boxes.jpg",
+    image: "Images/customized-cbd-tuck-boxes.webp",
     description: "CBD tuck boxes are custom-designed for CBD products, balancing secure packaging with space for regulatory labeling and branding. The tuck closure keeps items safe, while versatile sizing suits tinctures, edibles, and topicals."
   },
   "roll-end-tuck-boxes": {
     title: "Roll End Tuck Boxes",
-    image: "Images/Roll End Tuck box.png",
+    image: "Images/Roll End Tuck box.webp",
     description: "Roll end tuck boxes are built for strength, with extended flaps that roll over the edges and tuck into the sides for added stability. This design is ideal for shipping, providing extra cushioning and seamless opening for a smooth unboxing experience."
   },
   "reverse-tuck-end-boxes": {
     title: "Reverse Tuck End Boxes",
-    image: "Images/Reverse Tuck End Box.png",
+    image: "Images/Reverse Tuck End Box.webp",
     description: "Reverse tuck end boxes offer a unique closure, with the top and bottom flaps folding in opposite directions. This design is quick to assemble and easy to open, making it a popular choice for retail packaging, pharmaceuticals, and cosmetics."
   },
   "123-bottom-boxes": {
     title: "1-2-3 Bottom Boxes",
-    image: "Images/1-2-3 Bottom Box.png",
+    image: "Images/1-2-3 Bottom Box.webp",
     description: "1-2-3 bottom boxes are engineered for easy assembly, as the base snaps together in three simple steps. Their secure foundation supports heavier items and ensures the package won’t pop open, making them a dependable choice for substantial or bulky products."
   }
 };

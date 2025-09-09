@@ -4,8 +4,8 @@ const data = [
   {
     id: "mailer",
     title: "Custom Mailer Boxes",
-    image: "Images/Custom-box.png",
-    hoverImage: "Images/Custom-box-hover.jpg",
+    image: "Images/Custom-box.webp",
+    hoverImage: "Images/Custom-box-hover.webp",
     description: "Offer secure, stylish packaging for e-commerce and subscription products. Designed for durability and brand impact, they enhance presentation and protect contents during transit."
   },
   {
@@ -19,14 +19,14 @@ const data = [
     id: "rigid",
     title: "Custom Rigid Boxes",
     image: "Images/Custom-box-2.jpg",
-    hoverImage: "Images/Custom-box-2-hover.jpg",
+    hoverImage: "Images/Custom-box-2-hover.webp",
     description: "Premium, sturdy packaging solutions ideal for luxury products. With a high-end finish and solid structure, they deliver an exceptional unboxing experience and strong brand presence."
   },
   {
     id: "shipping",
     title: "Custom Shipping Boxes",
     image: "Images/Custom-box-3.png",
-    hoverImage: "Images/Custom-box-3-hover.png",
+    hoverImage: "Images/Custom-box-3-hover.webp",
     description: "Shipper, or Regular Slotted Carton (RSC), is the perfect box for packaging and delivering bulky items."
   },
   {
@@ -47,21 +47,21 @@ const data = [
     id: "sleeve",
     title: "Sleeve Boxes",
     image: "Images/Custom-box-6.png",
-    hoverImage: "Images/Custom-box-6-hover.jpeg",
+    hoverImage: "Images/Custom-box-6-hover.webp",
     description: "Feature a sliding cover design that adds style and protection to your products. They’re perfect for enhancing brand presentation with a sleek, premium look."
   },
   {
     id: "bottle",
     title: "Bottle Boxes",
     image: "Images/Custom-box-8.jpg",
-    hoverImage: "Images/Custom-box-8-hover.jpg",
+    hoverImage: "Images/Custom-box-8-hover.webp",
     description: "Designed to securely hold and showcase bottles, making them ideal for beverages, cosmetics, or fragrances. They offer both protection and a premium presentation."
   },
   {
     id: "pillow",
     title: "Pillow Boxes",
     image: "Images/Custom-box-9.jpg",
-    hoverImage: "Images/custom-box-9-hover.jpg",
+    hoverImage: "Images/custom-box-9-hover.webp",
     description: "Curved design that's perfect for small, lightweight items like gifts, accessories, or cosmetics. Compact and stylish, they offer a simple yet elegant packaging solution."
   },
   {
@@ -75,42 +75,42 @@ const data = [
     id: "corrugated-trays",
     title: "Corrugated Trays",
     image: "Images/Custom-box-11.webp",
-    hoverImage: "Images/Custom-box-11-hover.jpg",
+    hoverImage: "Images/Custom-box-11-hover.webp",
     description: "Sturdy, open-top packaging solutions ideal for displaying or transporting multiple items. Lightweight yet strong, they’re perfect for retail shelves, storage, and shipping efficiency."
   },
   {
     id: "book",
     title: "Custom Book Boxes",
     image: "Images/Custom-box-12.jpg",
-    hoverImage: "Images/Custom-box-12-hover.jpg",
+    hoverImage: "Images/Custom-box-12-hover.webp",
     description: "Protective packaging designed to resemble books, perfect for gifting, keepsakes, or premium product presentation. They combine durability with a unique, stylish appeal."
   },
   {
     id: "burger",
     title: "Burger Boxes",
     image: "Images/Custom-box-13.png",
-    hoverImage: "Images/Custom-box-13-hover.png",
+    hoverImage: "Images/Custom-box-13-hover.webp",
     description: "Designed to keep your burgers fresh, secure, and visually appealing. Perfect for dine-in, takeout, or delivery, they offer durability, insulation, and custom branding options."
   },
   {
     id: "magnetic",
     title: "Magnetic Closure",
     image: "Images/Custom-box-14.jpg",
-    hoverImage: "Images/Custom-box-14-hover.jpg",
+    hoverImage: "Images/Custom-box-14-hover.webp",
     description: "Premium unboxing experience with their sleek design and secure magnetic flap. Ideal for luxury products and gifts, they combine elegance with functionality."
   },
   {
     id: "bakery",
     title: "Custom Bakery Boxes",
     image: "Images/Custom-box-15.jpg",
-    hoverImage: "Images/Custom-box-15-hover.jpg",
+    hoverImage: "Images/Custom-box-15-hover.webp",
     description: "Keep baked goods fresh, protected, and beautifully presented. Perfect for cakes, pastries, and treats, they offer both charm and functionality for bakeries and events."
   },
   {
     id: "cosmetic",
     title: "Cosmetic Boxes",
     image: "Images/Custom-box-16.png",
-    hoverImage: "Images/Custom-box-16-hover.png",
+    hoverImage: "Images/Custom-box-16-hover.webp",
     description: "Enhance your brand’s image while securely packaging skincare and beauty products. Sleek, durable, and fully customizable, they’re perfect for both retail display and gifting."
   }
 
