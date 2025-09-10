@@ -10,33 +10,35 @@
   <meta name="author" content="Custom Box USA" />
   <title>Custom Packaging Boxes | Premium & Eco-Friendly | USA</title>
 
-  <!-- Preconnect for faster Google Fonts -->
+ <!-- Preconnect fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Main stylesheet -->
+  <!-- Critical above-the-fold CSS (inline) -->
+  <style>
+    /* Example: only critical Tailwind classes used above the fold */
+    .w-full{width:100%}.h-full{height:100%}.object-cover{object-fit:cover}
+  </style>
+
+  <!-- Main stylesheet (load normally) -->
   <link rel="stylesheet" href="Css/style.css">
 
-  <!-- Font Awesome (only one version) -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
 
-  <!-- Swiper CSS (preload to reduce blocking) -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  </noscript>
+  <!-- Swiper CSS -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="Images/Favicon.webp" type="image/x-icon">
 
-  <!-- Swiper JS (defer so it doesn’t block rendering) -->
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
-  <!-- Tailwind CDN (safe, no flash, blocking until loaded) -->
+  <!-- Full Tailwind CDN (for non-critical content) -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
