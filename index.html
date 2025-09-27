@@ -194,12 +194,12 @@
 
 <section class="relative text-white overflow-hidden px-[40px] pt-0 pb-0 group">
   <!-- Background Video -->
-  <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted playsinline preload="auto">
+  <!-- <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted playsinline preload="auto">
     <source src="/Images/IMG_0111.MOV" type="video/mp4" />
-  </video>
+  </video> -->
 
   <!-- Overlay (hidden on hover) -->
-  <div class="absolute inset-0 bg-[#f97316] bg-opacity-100 group-hover:bg-opacity-0 transition duration-500 z-0"></div>
+  <div class="absolute inset-0 bg-[#f97316] bg-opacity-100 transition duration-500 z-0"></div>
 
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center relative z-10 min-h-[400px] pt-[6rem]">
     <!-- Left Text Content -->
@@ -1645,6 +1645,32 @@
   closeBtn.addEventListener('click', () => {
     banner.remove();
   });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyImages = document.querySelectorAll("img.lazy");
+
+  if ("IntersectionObserver" in window) {
+    let observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.getAttribute("data-src");
+          img.classList.remove("lazy");
+          obs.unobserve(img);
+        }
+      });
+    });
+
+    lazyImages.forEach(img => observer.observe(img));
+  } else {
+    // Fallback for old browsers
+    lazyImages.forEach(img => {
+      img.src = img.getAttribute("data-src");
+      img.classList.remove("lazy");
+    });
+  }
+});
 </script>
 
 </body>
