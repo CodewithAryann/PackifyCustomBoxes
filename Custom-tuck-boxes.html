@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Custom Product Quote | PackifyCustomBoxes</title>
   <link rel="shortcut icon" href="Images/Favicon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="Css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -45,14 +46,92 @@
 
 <body class="bg-gray-50 text-gray-800">
 
-  <header class="bg-white border-b shadow-sm sticky top-0 z-30">
-    <div class="max-w-7xl mx-auto justify-between items-center px-6 py-4">
-      <h1 class="text-xl text-center font-bold text-gray-800">Packify<span class="text-orange-500">CustomBoxes</span>
+  <header class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur text-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between relative 
+            lg:px-[65px] lg:py-[18px] lg:gap-[12%] lg:justify-start">
+
+    <!-- Logo (centered on mobile) -->
+    <div class="w-full text-center lg:text-left lg:w-auto">
+      <h1 class="text-xl sm:text-2xl font-bold">
+        Packify<span class="text-orange-500">CustomBoxes</span>
       </h1>
     </div>
-  </header>
 
-  <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 bg-white rounded-lg shadow-lg">
+    <!-- Hamburger Button -->
+    <button id="hamburger" class="lg:hidden absolute right-4 top-4 z-50 flex flex-col gap-1 focus:outline-none mt-[5px]">
+      <span class="block w-6 h-0.5 bg-white transition-all"></span>
+      <span class="block w-6 h-0.5 bg-white transition-all"></span>
+      <span class="block w-6 h-0.5 bg-white transition-all"></span>
+    </button>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden lg:flex gap-6 items-center font-medium">
+      <a href="index.html" class="hover:text-orange-400 transition">Home</a>
+      <a href="#about" class="hover:text-orange-400 transition">About</a>
+      <div class="group relative">
+        <button class="flex items-center gap-1 hover:text-orange-400 transition focus:outline-none">
+          Types of Boxes
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <!-- Dropdown -->
+        <div class="absolute left-1/2 -translate-x-1/2 mt-3 w-48 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
+          <a href="Custom-Mailer-Boxes.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Mailer Boxes</a>
+          <a href="Custom-tuck-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Tuck Boxes</a>
+          <a href="rigid-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Rigid Boxes</a>
+          <a href="Dispenser-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Dispenser Boxes</a>
+          <a href="Cigarette-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Cigarette Boxes</a>
+          <a href="Burger-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Burger Boxes</a>
+          <a href="Magnetic-closure.html" class="block px-4 py-2 hover:bg-gray-100">Magnetic Closure</a>
+          <a href="Cosmetic-Boxes.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg">Cosmetic Boxes</a>
+        </div>
+      </div>
+      <a href="#choose" class="hover:text-orange-400 transition">Why Choose Us</a>
+      <a href="#it-works" class="hover:text-orange-400 transition">How it Works</a>
+      <a href="#faqs" class="hover:text-orange-400 transition">FAQ</a>
+      <a href="#quote" class="hover:text-orange-400 transition">Request a Quote</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-[#0000] text-white py-6 text-lg flex flex-col space-y-3 items-center text-center lg:hidden">
+  <a href="index.html" class="block w-full hover:text-orange-400 transition">Home</a>
+  <a href="#about" class="block w-full hover:text-orange-400 transition">About</a>
+
+  <!-- Dropdown Button -->
+  <div class="w-full">
+    <button class="w-full py-2 flex justify-center items-center gap-1 hover:text-orange-400 transition dropdown-toggle">
+      Types of Boxes
+      <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <!-- Dropdown Content -->
+    <div class="hidden flex-col bg-white text-gray-800 rounded-b-lg overflow-hidden dropdown-content">
+      <a href="Custom-Mailer-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Mailer Boxes</a>
+      <a href="Custom-tuck-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Tuck Boxes</a>
+      <a href="rigid-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Rigid Boxes</a>
+      <a href="Dispenser-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Dispenser Boxes</a>
+      <a href="Cigarette-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Cigarette Boxes</a>
+      <a href="Burger-boxes.html" class="block px-4 py-2 hover:bg-gray-100">Burger Boxes</a>
+      <a href="Magnetic-closure.html" class="block px-4 py-2 hover:bg-gray-100">Magnetic Closure</a>
+      <a href="Cosmetic-Boxes.html" class="block px-4 py-2 hover:bg-gray-100">Cosmetic Boxes</a>
+    </div>
+  </div>
+
+  <a href="#choose" class="block w-full hover:text-orange-400 transition">Why Choose Us</a>
+  <a href="#it-works" class="block w-full hover:text-orange-400 transition">How it Works</a>
+  <a href="#faqs" class="block w-full hover:text-orange-400 transition">FAQ</a>
+  <a href="#quote" class="block w-full hover:text-orange-400 transition">Request a Quote</a>
+</div>
+</header>
+
+  <main class="max-w-6xl mx-auto p-6 pt-[6rem] grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 bg-white rounded-lg shadow-lg">
 
     <!-- Static Product Detail Section -->
     <section class="col-span-1">
@@ -616,8 +695,78 @@
 
 
 
-  <footer class="text-center py-6 text-sm text-gray-500 mt-12">
-    &copy; 2025 PackifyCustomBoxes. All rights reserved.
+  <footer class="bg-orange-500 text-white px-6 py-10 rounded-t-[2rem]">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Logo and Social -->
+      <div>
+        <h1 class="text-2xl font-bold mb-2">Packify</h1>
+        <h2 class="text-lg font-semibold mb-4">CUSTOM BOXES</h2>
+        <div class="flex gap-4 text-xl justify-center">
+          <a href="https://www.instagram.com/packifycustomboxes?utm_source=qr&igsh=YjNzdWhtZWl4ZzVu" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <!-- <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
+          
+          <!-- <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+          <a href="https://wa.me/+12013050858?text=Hi%2C%20I'm%20interested%20in%20custom%20boxes%20and%20would%20like%20to%20know%20more." aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="#type" class="hover:underline">Products</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#quote" class="hover:underline">Contact</a></li>
+          <li><a href="refund-returns.html" class="hover:underline">Refund and Returns</a></li>
+          <li><a href="shipping-policy.html" class="hover:underline">Shipping Policy</a></li>
+          <li><a href="reviews.html" class="hover:underline">Reviews</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Contact</h3>
+        <ul class="space-y-2">
+          <li><i class="fas fa-phone mr-2"></i>+1(201)3050858</li>
+          <li><i class="fas fa-envelope mr-2"></i>packifycustomboxes@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt mr-2"></i>30 N Gould St Ste N, Sheridan, WY 82801 USA</li>
+        </ul>
+      </div>
+
+      <!-- Help -->
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Help</h3>
+        <ul class="space-y-2">
+          <li><a href="how-to-order.html" class="hover:underline">How to Order</a></li>
+          <li><a href="#faqs" class="hover:underline">FAQ</a></li>
+          <li><a href="#" class="hover:underline">Dieline Templates</a></li>
+          <li><a href="artwork-guidelines.html" class="hover:underline">Artwork Guidelines</a></li>
+          <li><a href="how-to-measure.html" class="hover:underline">How to Measure a Box</a></li>
+          <li><a href="blog.html" class="hover:underline">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Payment and Bottom Bar -->
+    <div class="max-w-7xl mx-auto mt-10 border-t border-white/30 pt-6 text-center">
+      <h4 class="font-semibold text-lg mb-2">Payment Methods</h4>
+      <p class="mb-3">Our website is compatible with many popular payment methods. SSL 100% Secure Transactions.</p>
+      <div class="flex justify-center gap-4 mb-4">
+        <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" class="h-8" />
+        <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" class="h-8" />
+        <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="Paypal" class="h-8" />
+        <img src="https://img.icons8.com/color/48/000000/amex.png" alt="American Express" class="h-8" />
+        <img src="https://img.icons8.com/color/48/000000/discover.png" alt="Discover" class="h-8" />
+      </div>
+      <div class="flex flex-col md:flex-row justify-between text-sm text-white/90 px-4">
+        <p>Copyright © 2025 PackifyCustomBoxes. All Rights Reserved.</p>
+        <div class="flex gap-4 mt-2 md:mt-0">
+          <a href="terms.html" class="hover:underline">Terms and Conditions</a>
+          <a href="privacy.html" class="hover:underline">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- WhatsApp Floating Button with Tooltip -->
   <div class="fixed bottom-6 left-6 z-50 flex flex-col items-start space-y-2">
@@ -680,6 +829,7 @@
   </script>
   <script src="Javascript/Custom-Tuck-Boxes.js"></script>
   <script src="Javascript/whatapp.js"></script>
+  <script src="Javascript/script.js"></script>
 </body>
 
 </html>
